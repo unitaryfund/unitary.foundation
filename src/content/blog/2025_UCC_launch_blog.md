@@ -1,8 +1,8 @@
 ---
-title: How UCC Solves Today's Quantum Compilation Problems
+title: Introducing the Unitary Compiler Collection (UCC)
 author: Unitary Foundation Team
-day: 23
-month: 1
+day: 4
+month: 3
 year: 2025
 tags: 
   - python
@@ -12,113 +12,80 @@ tags:
   - quantum hardware
 ---
 
-## **How UCC Solves Today's Quantum Compilation Problems**
+**Introducing the Unitary Compiler Collection (UCC)**
 
-*Launch date: Jan 23, 2025*  
-As quantum hardware continues to advance, so too does the complexity of programming that hardware. With increasing qubit counts, diverse gate operations, extended compute times, and varied architectures, there are new challenges for state of the art quantum compilation. This does not help busy programmers and scientists who are eager to make the best out available quantum hardware but are faced with an ever increasing list of choices to run their program on quantum computers. 
+As quantum hardware advances, so does the complexity of programming it. Increasing qubit counts, diverse gate operations, and varied architectures present new challenges for quantum compilation. If we want quantum computation to be useful and accessible to more people, which we do at Unitary Foundation, we are going to need great open source compilers.
 
-[Unitary Foundation](https://www.unitary.foundation) is working to make life easier for quantum programmers. We are excited to announce the Unitary Compiler Collection (ucc), an open source quantum computing compiler designed to simplify and enhance your quantum development experience. This first launch is just the start of a project that will grow over time with the community. We are developing it in public so that the whole community can share, compare and contribute their use cases and compiler passes, to the benefit of all. 
+Two major challenges that we see are:
 
-UCC is built to tackle the challenges of modern quantum computing with several key features:
+1. Compiler improvements are often isolated in separate libraries or one-off repositories without integration into existing tools.  
+2. There are high switching costs between quantum computing frameworks and hardware platforms.
 
-**1\. High Performance Gate Reduction**  
-UCC delivers state-of-the-art gate count reductions, outperforming standard passes in frameworks like Qiskit and TKET in benchmarks. Its optimizations balance accuracy and speed, enabling compilation for circuits with hundreds to thousands of qubits.
+To address these, Unitary Foundation has started building the **Unitary Compiler Collection (UCC)** to foster collaboration and streamline quantum compilation.
 
-Below are our latest performance metrics for gate reduction (here called “compiled ratio”), averaging over a range of [benchmarks](https://github.com/unitaryfund/ucc/blob/main/benchmarks/run_ucc_benchmarks.ipynb) specified with OpenQASM. \[UPDATE with latest plots on launch date 1/23/25\]
+### **Why UCC?**
 
-![][image1]
+With UCC, we are building a home for **quantum compiler experts** to develop new passes and at the same time reducing friction for **quantum algorithm developers** to transition between simulation and hardware.
 
-*For benchmark results and reproduction scripts, visit: [UCC Benchmarks](https://github.com/unitaryfund/ucc/tree/main?tab=readme-ov-file#how-does-ucc-stack-up)*
+By surveying the ecosystem, we have begun using the best of open source: integrating performant and user-friendly tools into UCC, creating a platform-agnostic interface with competitive compile time and gate reduction efficiency. 
 
-**2\. No Code Changes to Switch Between Frontends**  
-UCC supports **Qiskit**, **Cirq**, **TKET and any other front-end that exports to OpenQASM** out-of-the-box, enabling developers to use their preferred tools without rewriting code.
+### **Key Features**
 
-```python
+#### **1\. Best-in-Class Compilation**
+
+We benchmark various compilers and continuously improve UCC’s default compilation (currently **"UCCDefault1"**) by integrating passes from existing compilers and developing custom transpiler passes—**and [we need your help](https://ucc.readthedocs.io/en/latest/contributing.html#proposing-a-new-transpiler-pass)\!**
+
+Right now, UCC leverages a subset of Qiskit’s transpiler passes optimized with Rust for circuit optimization. We regularly benchmark UCC’s default passes against existing compilers and SDKs to ensure we are capturing the best the ecosystem has to offer to reduce compiled gate counts and runtime.
+
+You can [suggest](https://github.com/unitaryfund/ucc/issues/new/choose) adding a new compiler to our benchmarks or explore the workloads and backends we benchmark continuously [here](https://github.com/unitaryfund/ucc/blob/main/benchmarks/scripts/run_benchmarks.sh). 
+
+#### **2\. No Code Changes to Switch Between Frontends**
+
+UCC leverages **qBraid** to support **Qiskit, Cirq, TKET**, and a growing number of other quantum frameworks, so developers can use their preferred tools to define circuits without rewriting code.
+
+```py
 from ucc import compile
-
 compiled_qiskit_circuit = compile(my_qiskit_circuit)
 compiled_cirq_circuit = compile(my_cirq_circuit)
-...
 ```
 
-You can also convert between any of the supported circuit formats by using the \``` return_format` `` keyword, no extra imports necessary:
+#### **3\. Compatible with Any Backend Supporting OpenQASM**
+
+Not only does UCC accept a wide array of input circuit formats, but it can compile and seamlessly convert between them the `return_format` keyword – no extra imports needed:
 
 ```py
-# conversions
-compiled_tket_circuit = compile(my_qiskit_circuit, return_format="tket")
-compiled_qasm2_circuit = compile(my_qiskit_circuit, return_format="qasm2")
-...
+tket_circuit = compile(my_qiskit_circuit, return_format="tket")
+qasm2_circuit = compile(my_qiskit_circuit, return_format="qasm2")
 ```
 
-**3\. Compatible with Any Backend Supporting OpenQASM**  
-You can specify a wide range of return formats for your circuit, including **OpenQASM 2.0** and **OpenQASM 3.0**, making it compatible with major quantum hardware providers, including:
+Supported return formats also include OpenQASM 2.0 and 3.0, making UCC compatible with major quantum hardware providers, including: **IBM Quantum, Rigetti, IonQ, Amazon Braket,** and more.
 
-* **IBM Quantum**  
-* **Rigetti**  
-* **IonQ**  
-* **Amazon Braket**
+### **The Future of UCC**
 
-**4\. Straightforward Custom Compiler Passes**  
-Developers can implement custom passes using UCC's flexible architecture, based on customizations of the Qiskit transpiler. The framework simplifies debugging and iterative improvements:
+We are releasing UCC in its foundational stages because we are committed to building in public and inviting the quantum open source community to shape its development with us. 
 
-```py
-from ucc import UCCDefault1ucc_compiler = UCCDefault1()
-ucc_compiler.pass_manager.append(MyCustomPass())
-custom_compiled_circuit = ucc_compiler.run(circuit_to_compile)
-```
+For development priorities post-launch, we want to focus on what we think is most impactful for the progress of quantum computing – and where we have unique expertise at Unitary Foundation – leveraging our diverse and dynamic quantum open-source community to push into the regime of thousands of qubits, 10s of thousands of gates, where compilers require novel architectures and abstractions to handle errors.
 
-*Learn how to write your own pass in the [User Guide](https://github.com/unitaryfund/ucc/blob/main/docs/source/user_guide.rst#writing-a-custom-pass)*
+Key roadmap items include:
 
-### **Vision for the Future of UCC**
+* **Quantum Error Mitigation (QEM):** Integration with [**Mitiq**](https://unitary.foundation/posts/2024_mitiq_impact/), our cross-platform QEM library with 212k+ downloads and 100+ citations.  
+* **Hardware-Aware Compilation:** Custom routing and scheduling optimized for emerging architectures.  
+* **Quantum Error Correction (QEC):** Implementing early fault tolerance protocols in conjunction with error mitigation  
+* **Hybrid classical-quantum programming:** Mid-circuit measurements, fast feedback, repeat-until-success, etc. 
 
-The UCC roadmap includes advanced features aimed at pushing the boundaries of quantum compilation:
+We will collaborate with the broader quantum software and hardware communities to develop new abstractions and tooling for the **Early Fault Tolerance** era. We are grateful to partner with collaborators in the [SMART Stack](https://cs.uchicago.edu/news/doe-awards-fred-chong-and-his-national-research-team-7-5m-to-develop-a-smart-software-stack-to-control-quantum-computer-noise/), a DOE-funded project to develop novel approaches in quantum stack design that are Scalable, Modular, cross-platform Adaptable, dynamically Reconfigurable, and error-Targeted. We look forward to collaborating with UF members and the wider Unitary Foundation community.
 
-* **Quantum Error Mitigation (QEM):** Tools for suppressing and reducing errors to improve program fidelity, including integration with [Mitiq](https://github.com/unitaryfund/mitiq).  
-* **Hardware-Aware Compilation:** Support for custom routing and scheduling optimized for emerging architectures.  
-* **Quantum Error Correction (QEC):** Integration of error-correcting codes to enable fault-tolerant quantum computing.  
-* **Quantum Control Optimization:** Techniques to optimize pulse-level control and reduce noise during execution.
+### **Help out by contributing to UCC**
 
-We’re also looking for ideas from you\! What would you like to see added to your compiler toolchain? Are there techniques or passes that you find very useful? Open up a feature suggestion: [https://github.com/unitaryfund/ucc/issues](https://github.com/unitaryfund/ucc/issues) 
+We’re building UCC as a community-driven project\! You can help by:
 
----
+* [**Creating Custom Compiler Passes**](https://ucc.readthedocs.io/en/latest/contributing.html#proposing-a-new-transpiler-pass)  
+* [**Reporting Bugs & Requesting Features**](https://github.com/unitaryfund/ucc/issues)  
+* [**Contributing Code**](https://ucc.readthedocs.io/en/latest/contributing.html#contributing-guide)  
+* [**Joining the Discussion**](http://discord.unitary.foundation) (Discord \#ucc channel coming soon)
 
-### **Get Started with UCC Today**
+**Get involved and help shape the future of quantum compilation\!**
 
-UCC is open source under the **GNU AGPL v3.0** license. It’s easy to get started:
-
-**1\. Install UCC:**
-
-```py
-pip install ucc
-```
-
-**2\. Compile a Quantum Circuit:**
-
-```py
-from ucc import compile
-
-compiled_circuit = compile(my_circuit)
-```
-
-**3\. Try Benchmarks and Examples:**  
-Explore real-world performance metrics and sample programs in the [Tutorials & Benchmarks](https://github.com/unitaryfund/ucc/tree/main/benchmarks).
-
-### **Contribute to UCC**
-
-We’re building UCC as a community-driven project. Your contributions help improve it for everyone.
-
-* **Create a Custom Compiler Pass:** Learn how in the [User Guide](https://github.com/unitaryfund/ucc/blob/main/docs/source/user_guide.rst#writing-a-custom-pass)  
-* **Submit a bug report or feature request:** [On GitHub](https://github.com/unitaryfund/ucc/issues/new/choose)  
-* **Contribute Code:** Follow the [Contribution Guide](https://ucc.readthedocs.io/en/latest/contributing.html) to submit new passes and improvements.  
-* **Join the Discussion:** Connect with us on [Discord](http://discord.unitary.fund/) in the \#ucc channel \[to be created\].
-
-### **Final Thoughts**
-
-Our goal is for UCC to make quantum programming simpler, faster, and more scalable. Whether you’re running on hardware or developing your own compiler passes, we want UCC to give you the tools to succeed.
-
-Get started today and help shape the future of quantum compilation\!
-
-**Github:** [unitaryfoundation/ucc](https://github.com/unitaryfund/ucc)  
-**Docs:** [UCC Documentation](https://ucc.readthedocs.io/)  
-**Discord:** [Join the Conversation](http://discord.unitary.foundation/)  
-**Stay Updated:** Sign up for our mailing list. \[ADD link\]
+GitHub: [**unitaryfund/ucc**](https://github.com/unitaryfund/ucc)  
+Docs: [**UCC Documentation**](https://ucc.readthedocs.io/)  
+Stay Updated: [**Mailing List**](https://bit.ly/uf-signup)
