@@ -11,9 +11,6 @@ tags:
   - qbraid
   - quantum hardware
 ---
-
-**Introducing the Unitary Compiler Collection (UCC)**
-
 As quantum hardware advances, so does the complexity of programming it. Increasing qubit counts, diverse gate operations, and varied architectures present new challenges for quantum compilation. If we want quantum computation to be useful and accessible to more people, which we do at Unitary Foundation, we are going to need great open source compilers.
 
 Two major challenges that we see are:
