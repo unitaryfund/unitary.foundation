@@ -79,7 +79,7 @@ We’re building UCC as a community-driven project\! You can help by:
 * [**Creating Custom Compiler Passes**](https://ucc.readthedocs.io/en/latest/contributing.html#proposing-a-new-transpiler-pass)  
 * [**Reporting Bugs & Requesting Features**](https://github.com/unitaryfund/ucc/issues)  
 * [**Contributing Code**](https://ucc.readthedocs.io/en/latest/contributing.html#contributing-guide)  
-* [**Joining the Discussion**](http://discord.unitary.foundation) - especially the [\#ucc channel](https://discord.com/channels/764231928676089909/1346546840526524427) on Discord
+* [**Joining the Discussion**](https://discord.com/channels/764231928676089909/1346546840526524427)
 
 **Get involved and help shape the future of quantum compilation\!**
 
