@@ -4,6 +4,8 @@ author: Unitary Fund Team
 day: 7
 month: 2
 year: 2023
+tags: 
+  - Members
 ---
 
 Since its launch last year, our membership program has allowed Unitary
