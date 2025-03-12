@@ -4,6 +4,8 @@ author: UF Team
 day: 31
 month: 3
 year: 2022
+tags: 
+  - Members
 ---
 
 We are excited to share that <a href="https://agnostiq.ai/" target="_blank" class="highlight">Agnostiq</a> is now a part of our Corporate Member Program as a Supporting member!
