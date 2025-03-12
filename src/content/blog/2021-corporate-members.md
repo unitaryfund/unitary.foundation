@@ -4,6 +4,8 @@ author: UF Team
 day: 31
 month: 1
 year: 2022
+tags: 
+  - Members
 ---
 
 Since 2018, Unitary Fund has supported the open quantum technology ecosystem around the world. We’ve awarded more than 50 [microgrants](https://unitary.foundation/grants.html) to projects from more than 20 countries, developed the leading error-mitigating quantum [compiler](https://unitary.foundation/mitiq.html), run [hackathons](https://unitaryfund.github.io/unitaryhack/), and supported open source community building.
