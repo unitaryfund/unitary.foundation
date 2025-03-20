@@ -22,4 +22,4 @@ Interested in participating in this year’s HACK? Here’s what you can do righ
 - **Consider** hosting an in-person hackday at your college or university as part of unitaryHACK. Ready to host? Reach out to Veena at hack(at)unitary(dot)foundation to set up your Hackday
 - **Become** a sponsor of the event. The threshold for sponsorship of unitaryHACK is lower than other events out there - we hope you'll take advantage and support our open source community in a meaningful way! Reach out to Ben at parnters(at)unitary(dot)foundation for more information. 
 
-See you all in two months! 
+See you all in May! 
