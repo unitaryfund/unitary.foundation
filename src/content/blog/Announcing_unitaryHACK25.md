@@ -19,7 +19,7 @@ Interested in participating in this year’s HACK? Here’s what you can do righ
 - **Register** for unitaryHACK25 [through this link](https://airtable.com/apppeZIiaDZ7dgNya/pag7CoNawqpRfN6Oo/form) 
 - **Check out** the [unitaryHACK website](https://unitaryhack.dev/) to learn more about the rules and see the projects that have signed up so far
 - **Join** us on [Discord](https://discord.gg/2Y9z9xKKbr) to be the first to hear announcements and ask our team any questions you may have leading up to the event
-- **Consider** hosting an in-person hackday at your college or university as part of unitaryHACK. Ready to host? Reach out to Veena at hack(at)unitary(dot)foundation to set up your Hackday
-- **Become** a sponsor of the event. The threshold for sponsorship of unitaryHACK is lower than other events out there - we hope you'll take advantage and support our open source community in a meaningful way! Reach out to Ben at partners(at)unitary(dot)foundation for more information. 
+- **Consider** hosting an in-person hackday at your college or university as part of unitaryHACK. Ready to host? Reach out to us at hack(at)unitary(dot)foundation to set up your Hackday
+- **Become** a sponsor of the event. The threshold for sponsorship of unitaryHACK is lower than other events out there - we hope you'll take advantage and support our open source community in a meaningful way! Reach out to us at partners(at)unitary(dot)foundation for more information. 
 
 See you all in May! 
