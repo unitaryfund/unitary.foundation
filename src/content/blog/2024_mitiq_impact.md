@@ -148,7 +148,7 @@ If this sounds like something you're interested in, I encourage you to get invol
 
 Whether you're a researcher, educator, or software engineer, or quantum tinkerer, there's a place for you in the Mitiq community.
 
-- Check out the [`mitiq`](https://github.com/unitaryfund/mitiq) GitHub repository and contribute by opening issues, asking questions, or making a pull request. If you have a QEM technique you'd like to use, let us know! Feature requests are always appreciated, and encouraged.
+- Check out the [`mitiq`](https://github.com/unitaryfoundation/mitiq) GitHub repository and contribute by opening issues, asking questions, or making a pull request. If you have a QEM technique you'd like to use, let us know! Feature requests are always appreciated, and encouraged.
 - Join our [Discord community](http://discord.unitary.foundation) to connect with me and all the other wonderful Mitiq developers and quantum enthusiasts.
 - Sign up to receive the [Mitiq Newsletter](https://forms.gle/6UcUjSawHyweXhQV7) to stay up to date with the latest happenings.
 

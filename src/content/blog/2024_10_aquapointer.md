@@ -11,7 +11,7 @@ tags:
 
 ## Project overview
 
-[Aquapointer](https://github.com/unitaryfund/aquapointer) is an open source software library developed by the Unitary Fund team with consortium partners [Pasqal](https://www.pasqal.com/) and [Qubit Pharmaceuticals](https://www.qubit-pharmaceuticals.com/) as part of the AQUA project.
+[Aquapointer](https://github.com/unitaryfoundation/aquapointer) is an open source software library developed by the Unitary Fund team with consortium partners [Pasqal](https://www.pasqal.com/) and [Qubit Pharmaceuticals](https://www.qubit-pharmaceuticals.com/) as part of the AQUA project.
 The project was funded by [Wellcome Leap](https://wellcomeleap.org/) through the [Q4Bio program](https://wellcomeleap.org/q4bio/), a research program with the goal of accelerating the applications of quantum computing in human health. 
 The Aquapointer library is a generalized, automated version of the framework developed over the course of the AQUA project, which is detailed in a recently published paper [^1]: _Leveraging analog quantum computing with neutral atoms for solvent configuration prediction in drug discovery_.
 Aquapointer is designed as a computational tool for use in the pharmaceutical discovery and development process, specifically for leveraging quantum computing resources in the prediction of the locations of water molecules in protein cavities.

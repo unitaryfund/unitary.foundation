@@ -68,7 +68,7 @@ With respect to physical disabilities, 86% do not report any, while 7% prefer no
 
 ## Methodology
 
-The survey has been open  Sept. 7 – Oct. 7, 2022. The data is stored at [github.com/unitaryfund/qoss-survey](https://github.com/unitaryfund/qoss-survey).
+The survey has been open  Sept. 7 – Oct. 7, 2022. The data is stored at [github.com/unitaryfoundation/qoss-survey](https://github.com/unitaryfoundation/qoss-survey).
 
 Unitary Fund circulated the surveys on its social media platforms (Discord, Twitter, LinkedIn, UF blog) and contacting major blogs (QC Report, Qiskit blog, PennyLane blog, etc.), newsletters (UF mailing list, QuTiP mailing list, ORNL quantum computing newsletter, IEEE Quantum, QED-c newsletter, academic networks, etc.), UF members, supporters and partners.
 

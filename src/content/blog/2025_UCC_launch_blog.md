@@ -34,7 +34,7 @@ We benchmark various compilers and continuously improve UCC’s default compilat
 
 Right now, UCC leverages a subset of Qiskit’s transpiler passes optimized with Rust for circuit optimization. We regularly benchmark UCC’s default passes against existing compilers and SDKs to ensure we are capturing the best the ecosystem has to offer to reduce compiled gate counts and runtime.
 
-You can [suggest](https://github.com/unitaryfund/ucc/issues/new/choose) adding a new compiler to our benchmarks or explore the workloads and backends we benchmark continuously [here](https://github.com/unitaryfund/ucc/blob/main/benchmarks/scripts/run_benchmarks.sh). 
+You can [suggest](https://github.com/unitaryfoundation/ucc/issues/new/choose) adding a new compiler to our benchmarks or explore the workloads and backends we benchmark continuously [here](https://github.com/unitaryfoundation/ucc/blob/main/benchmarks/scripts/run_benchmarks.sh). 
 
 #### **2\. No Code Changes to Switch Between Frontends**
 
@@ -77,12 +77,12 @@ We will collaborate with the broader quantum software and hardware communities t
 We’re building UCC as a community-driven project\! You can help by:
 
 * [**Creating Custom Compiler Passes**](https://ucc.readthedocs.io/en/latest/contributing.html#proposing-a-new-transpiler-pass)  
-* [**Reporting Bugs & Requesting Features**](https://github.com/unitaryfund/ucc/issues)  
+* [**Reporting Bugs & Requesting Features**](https://github.com/unitaryfoundation/ucc/issues)  
 * [**Contributing Code**](https://ucc.readthedocs.io/en/latest/contributing.html#contributing-guide)  
 * [**Joining the Discussion**](https://discord.com/channels/764231928676089909/1346546840526524427)
 
 **Get involved and help shape the future of quantum compilation\!**
 
-GitHub: [**unitaryfund/ucc**](https://github.com/unitaryfund/ucc)  
+GitHub: [**unitaryfund/ucc**](https://github.com/unitaryfoundation/ucc)  
 Docs: [**UCC Documentation**](https://ucc.readthedocs.io/)  
 Stay Updated: [**Mailing List**](https://bit.ly/uf-signup)
