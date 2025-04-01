@@ -10,7 +10,7 @@ tags:
 
 Having a somewhat unorthodox background, my introduction into the quantum computing space actually began with a TikTok video.
 Like any other computer engineering student in their mid-30s stuck at home during a pandemic lockdown, the app seemed like a fun way to pass some boredom. 
-I was later introduced to Unitary Fund through my participation in the [Quantum Open Source Foundation's](https://qosf.org/) Quantum [Mentorship Program](https://qosf.org/qc_mentorship/), where the project I chose to undertake was to make a meaningful contribution to Unitary Fund's error-mitigation toolkit [Mitiq](https://github.com/unitaryfund/mitiq).
+I was later introduced to Unitary Fund through my participation in the [Quantum Open Source Foundation's](https://qosf.org/) Quantum [Mentorship Program](https://qosf.org/qc_mentorship/), where the project I chose to undertake was to make a meaningful contribution to Unitary Fund's error-mitigation toolkit [Mitiq](https://github.com/unitaryfoundation/mitiq).
 
 ## Discovering Quantum Computing
 
