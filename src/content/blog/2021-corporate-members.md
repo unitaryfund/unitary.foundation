@@ -8,7 +8,7 @@ tags:
   - Members
 ---
 
-Since 2018, Unitary Fund has supported the open quantum technology ecosystem around the world. We’ve awarded more than 50 [microgrants](https://unitary.foundation/grants.html) to projects from more than 20 countries, developed the leading error-mitigating quantum [compiler](https://unitary.foundation/mitiq.html), run [hackathons](https://unitaryfund.github.io/unitaryhack/), and supported open source community building.
+Since 2018, Unitary Fund has supported the open quantum technology ecosystem around the world. We’ve awarded more than 50 [microgrants](https://unitary.foundation/grants.html) to projects from more than 20 countries, developed the leading error-mitigating quantum [compiler](https://unitary.foundation/mitiq.html), run [hackathons](https://unitaryfoundation.github.io/unitaryhack/), and supported open source community building.
 
 Today, Unitary Fund is proud to announce our new corporate member program. We thank these organizations for their support and look forward to their further contributions in the coming year.
 
