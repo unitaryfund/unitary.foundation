@@ -83,6 +83,6 @@ We’re building UCC as a community-driven project\! You can help by:
 
 **Get involved and help shape the future of quantum compilation\!**
 
-GitHub: [**unitaryfund/ucc**](https://github.com/unitaryfoundation/ucc)  
+GitHub: [**unitaryfoundation/ucc**](https://github.com/unitaryfoundation/ucc)  
 Docs: [**UCC Documentation**](https://ucc.readthedocs.io/)  
 Stay Updated: [**Mailing List**](https://bit.ly/uf-signup)

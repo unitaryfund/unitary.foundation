@@ -47,7 +47,7 @@ Along with that sense of community, following along during the meetings helped m
 Decorators already existed for ZNE at the time, so this task was essentially making it so users could have the same or similar options for how to implement both techniques within their programs.
 In addition to that contribution, I made a few others that were mostly focused on organizing testing and improving documentation.
 
-While I was working on my contributions to Mitiq, I found out about Unitary Fund’s [Unitary Hack 2021](https://unitaryfund.github.io/unitaryhack/) quantum hackathon and started learning about what other projects existed.
+While I was working on my contributions to Mitiq, I found out about Unitary Fund’s [Unitary Hack 2021](https://unitaryfoundation.github.io/unitaryhack/) quantum hackathon and started learning about what other projects existed.
 Having done a bunch of work with networking back when I was in the military, [QuNetSim](https://github.com/tqsd/QuNetSim), a quantum-enabled network simulator, caught my eye.
 As part of the hackathon, I improved the template used to generate a default network, and I improved upon and expanded another hacker’s contribution to automatically generate standard topologies.
 
