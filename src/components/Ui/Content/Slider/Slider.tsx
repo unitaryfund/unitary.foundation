@@ -1,12 +1,11 @@
-// import React, { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper';
+import { Navigation } from 'swiper/modules';
 
 import 'swiper/css';
 import type { CollectionEntry } from 'astro:content';
 
 import { BlogItem } from '~/components/Pages/Blog/Content/BlogItem';
-import { ReactComponent as ArrowIcon } from '~/assets/svg/arrow.svg';
+import ArrowIcon from '~/assets/svg/arrow.svg?component';
 
 type BlogSliderProps = {
   posts: Array<CollectionEntry<'blog'>>;

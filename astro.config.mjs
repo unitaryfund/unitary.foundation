@@ -31,9 +31,6 @@ export default defineConfig({
     '/meetup': '/community/events',
     '/meetup.html': '/community/events',
   },
-  experimental: {
-    redirects: true,
-  },
   integrations: [
     tailwind({ config: { applyBaseStyles: false } }),
     mdx(),
@@ -59,6 +56,10 @@ export default defineConfig({
     rehypePlugins: [rehypeKatex],
   },
   vite: {
-    plugins: [svgr()],
+    plugins: [
+      svgr({
+        exportAsDefault: true
+      }),
+    ],
   },
 });

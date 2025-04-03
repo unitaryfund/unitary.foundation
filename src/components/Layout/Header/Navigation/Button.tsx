@@ -1,6 +1,7 @@
 import type { AnchorHTMLAttributes, ButtonHTMLAttributes, PropsWithChildren } from 'react';
 import { cn } from '~/util/cn';
-import { Icon, IconName } from '~/components/Ui/Icon';
+import { Icon } from '~/components/Ui/Icon';
+import type { IconName } from '~/components/Ui/Icon';
 
 type HTMLButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
 type HTMLAnchorProps = AnchorHTMLAttributes<HTMLAnchorElement>;

@@ -1,7 +1,8 @@
-import { Image, ImageProps } from '@unpic/react';
+import { Image } from '@unpic/react';
 import { cld } from '~/util/cloudinary';
 import type { SetOptional } from 'type-fest';
 import type { CloudinaryImage as CloudinaryImageType } from '@cloudinary/url-gen';
+import type { ImageProps } from '@unpic/react';
 
 type CloudinaryImageProps = SetOptional<ImageProps, 'src'> & {
   id: string;
