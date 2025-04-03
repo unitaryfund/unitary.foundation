@@ -1,7 +1,6 @@
-import { useState, type PropsWithChildren } from 'react';
+import { useState, type PropsWithChildren, type MouseEventHandler } from 'react';
 import { css } from '@emotion/css';
 import { cn } from '~/util/cn';
-import type { MouseEventHandler } from 'react'
 
 type AccordionProps = PropsWithChildren<{ className?: string }>;
 
