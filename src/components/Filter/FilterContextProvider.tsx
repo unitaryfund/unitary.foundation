@@ -1,4 +1,4 @@
-import { PropsWithChildren, createContext } from 'react';
+import { type PropsWithChildren, createContext } from 'react';
 import type { FilterSpec, FilterType } from '~/hooks/useFilter';
 
 export type FilterContextValues =

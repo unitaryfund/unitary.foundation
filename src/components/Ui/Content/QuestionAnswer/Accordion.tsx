@@ -1,4 +1,4 @@
-import { useState, type PropsWithChildren, MouseEventHandler } from 'react';
+import { useState, type PropsWithChildren, type MouseEventHandler } from 'react';
 import { css } from '@emotion/css';
 import { cn } from '~/util/cn';
 

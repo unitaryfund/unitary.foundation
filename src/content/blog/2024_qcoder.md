@@ -12,7 +12,7 @@ tags:
 ---
 
 <p align="center">
-    <img src='../../images/2024-qcoder/qcoder_logo.png' alt='QCoder Logo' width=800/>
+    <img src='../images/2024-qcoder/qcoder_logo.png' alt='QCoder Logo' width=800/>
 </p>
 
 In recent years, quantum algorithms have attracted attention for their theoretical promise of significant efficiency gains.
@@ -74,7 +74,7 @@ $$
 Summarizing these operations, we obtain the following circuit when $n = 4$:
 
 <p align="center">
-    <img src='../../images/2024-qcoder/QPC002_A3_circuit.png' width=500/>
+    <img src='../images/2024-qcoder/QPC002_A3_circuit.png' width=500/>
 </p>
 
 Below is a sample program:
@@ -105,7 +105,7 @@ What kind of quantum circuit should be designed to further reduce the depth of t
 Let's examine the following example with 8 qubits.
 
 <p align="center">
-    <img src='../../images/2024-qcoder/QPC002_A5_circuit.png' width=600/>
+    <img src='../images/2024-qcoder/QPC002_A5_circuit.png' width=600/>
 </p>
 
 In this case, the operations within each block, divided by the boundaries on the quantum circuit, act on different qubits, allowing them to be executed simultaneously. Therefore, the depth of each block is 1.

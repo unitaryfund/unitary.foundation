@@ -4,10 +4,8 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from '~/components/Ui/Content/Accordion/Accordion';
-import {
-  ColumnContentProps,
-  getColumnStyles,
-} from '~/components/Ui/Content/Column/Column';
+import { getColumnStyles } from '~/components/Ui/Content/Column/Column';
+import type { ColumnContentProps } from '~/components/Ui/Content/Column/Column';
 import { cn } from '~/util/cn';
 
 export default function AccordionColumn({

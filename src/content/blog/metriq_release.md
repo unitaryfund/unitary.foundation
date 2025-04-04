@@ -63,6 +63,6 @@ Whether you are a professional quantum hardware researcher, a quantum software d
 If you’d like to learn more or have help making a submission then reach out to us at metriq@unitary.foundation.
 
 <div style="text-align: center;">
-    <a href="https://metriq.info/"><img src="../images/metriq_logo_primary_blue_inverted.png" alt='Metriq logo' /></a>
+    <a href="https://metriq.info/"><img src="/images/metriq_logo_primary_blue_inverted.png" alt='Metriq logo' /></a>
 </div>
 
