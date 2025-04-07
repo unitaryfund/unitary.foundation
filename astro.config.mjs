@@ -58,7 +58,7 @@ export default defineConfig({
   vite: {
     plugins: [
       svgr({
-        exportAsDefault: true
+        exportAsDefault: true,
       }),
     ],
   },

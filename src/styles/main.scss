@@ -1,10 +1,7 @@
+@use 'tailwind';
 @use 'base/variables';
 @use 'base/default';
 @use 'components/headings';
 @use 'components/lists';
 @use 'components/markdown';
 @use 'components/swiper';
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

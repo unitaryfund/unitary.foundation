@@ -1,5 +1,5 @@
 import { useContext, useMemo } from 'react';
-import { FilterContext, FilterContextValues } from '~/components/Filter/FilterContextProvider';
+import { FilterContext, type FilterContextValues } from '~/components/Filter/FilterContextProvider';
 import TagFilter from '~/components/Filter/Renderer/TagFilter';
 import SelectFilter from '~/components/Filter/Renderer/SelectFilter';
 
