@@ -5,7 +5,7 @@ import 'swiper/css';
 import type { CollectionEntry } from 'astro:content';
 
 import { BlogItem } from '~/components/Pages/Blog/Content/BlogItem';
-import ArrowIcon from '~/assets/svg/arrow.svg?component';
+import arrowUrl from '~/assets/svg/arrow.svg?url';
 
 type BlogSliderProps = {
   posts: Array<CollectionEntry<'blog'>>;
@@ -39,12 +39,12 @@ export default function Slider({ posts }: BlogSliderProps) {
         <div
           className="swiper-button-prev flex items-center cursor-pointer px-3 justify-start md:justify-center w-1/2 md:w-[50px] h-[35px] bg-black"
           title="Prev">
-          <ArrowIcon className="rotate-180" />
+          <img src={arrowUrl} alt="Arrow icon" className="rotate-180" />
         </div>
         <div
           className="swiper-button-next flex items-center cursor-pointer px-3 justify-end md:justify-center w-1/2 md:w-[50px] h-[35px] bg-black"
           title="Next">
-          <ArrowIcon />
+          <img src={arrowUrl} alt="Arrow icon" />
         </div>
       </div>
     </Swiper>
