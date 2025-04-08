@@ -12,7 +12,7 @@ tags:
 
 At Unitary Fund, we help those interested in contributing to open quantum projects learn and practice the skills they need to do so. In May 2021, we organized [unitaryHACK](https://unitaryfoundation.github.io/unitaryhack/), a distributed quantum open source hackathon with 4k USD in bounties, physical and digital swag, and 20 participating projects. Working with open source project maintainers, we helped community members with a wide variety of backgrounds make meaningful contributions to their projects. Maintainers as well as Unitary Fund staff were on hand on our [Discord](http://discord.unitary.foundation) to help out with questions about the quantum technologies as well as the tools they use like git, GitHub, and a variety of languages and platforms used in the quantum space (Python, Julia, Q#, C++, Ruby, etc.)
 
-![unitaryHACK digital swag](../images/unitaryHACK-swag.png)
+![unitaryHACK digital swag](/images/unitaryHACK-swag.png)
 
 Digital swag for unitaryHACK, designed by [Frances Poblete](https://uxfol.io/francespoblete).
 
@@ -27,7 +27,7 @@ Over 370 attendees registered for the hackathon, many of whom were new to open s
 
 All in all, it was a great way to introduce lots of folks to open source quantum projects, and grow the community of quantum developers. That’s all for now, but stay tuned to our [Discord](http://discord.unitary.foundation), [Twitter](https://twitter.com/untiaryfund), [LinkedIn](https://www.linkedin.com/company/unitary-fund/), [mailing list](https://unitary.foundation/), and [community calendar](http://events.unitary.foundation) and join one of the most influential communities in quantum technologies.
 
-![unitaryHACK results card](../images/unitaryHACK-results.png)
+![unitaryHACK results card](/images/unitaryHACK-results.png)
 
   
 _Would you like to help support future iterations of unitaryHACK? [Get in touch with us](mailto:info@unitary.foundation), and we would love to collaborate!_

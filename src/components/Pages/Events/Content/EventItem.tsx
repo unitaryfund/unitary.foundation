@@ -2,9 +2,9 @@ import type { CollectionEntry } from 'astro:content';
 import {
   useState,
   type MouseEventHandler,
-  PropsWithChildren,
-  DetailedHTMLProps,
-  HTMLAttributes,
+  type PropsWithChildren,
+  type DetailedHTMLProps,
+  type HTMLAttributes,
   Fragment,
 } from 'react';
 import { css } from '@emotion/css';
