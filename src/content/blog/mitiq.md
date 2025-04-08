@@ -8,7 +8,7 @@ tags:
 - Mitiq
 ---
 
-We're excited to introduce [**Mitiq**](https://www.github.com/unitaryfund/mitiq), a toolchain that helps reduce errors in noisy quantum computers.
+We're excited to introduce [**Mitiq**](https://www.github.com/unitaryfoundation/mitiq), a toolchain that helps reduce errors in noisy quantum computers.
 
 See it in action! Here's an example in [Qiskit](http://qiskit.org/):
 
@@ -30,7 +30,7 @@ To begin with, we've focused on zero-noise extrapolation, an error mitigation te
 
 If you're interested in Mitiq and in quantum error mitigation, you can find information on usage and additional references in **Mitiq's documentation** at [**mitiq.readthedocs.io**](https://mitiq.readthedocs.io/en/stable/). To keep up to date with Mitiq's development, you can sign up for Unitary Fund's mailing list.
 
-We're looking forward to the feedback of the quantum software community: from fixing bugs to proposing enhancements in zero-noise extrapolation to additional quantum error-mitigation techniques. We're keeping a list of [**events**](https://github.com/unitaryfund/mitiq/wiki/Mitiq-Talks-and-Events) where members of the Unitary Labs team will be attending.
+We're looking forward to the feedback of the quantum software community: from fixing bugs to proposing enhancements in zero-noise extrapolation to additional quantum error-mitigation techniques. We're keeping a list of [**events**](https://github.com/unitaryfoundation/mitiq/wiki/Mitiq-Talks-and-Events) where members of the Unitary Labs team will be attending.
 
 Best wishes,
 

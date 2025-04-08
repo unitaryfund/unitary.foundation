@@ -20,7 +20,7 @@ With this help, we have expanded beyond our core microgrant program. We now:
 - staff an in-house technical team working on public goods in quantum tech
 - develop [mitiq](https://unitary.foundation/posts/2024_mitiq_impact/): the main cross-platform open source error-mitigating compiler
 - run [metriq](https://metriq.info/): an open source platform for quantum tech benchmarks
-- run [unitaryHack bounty programs](https://unitaryhack.dev/), a community [discord](https://discord.com/invite/2aHChkWPS2), and the major global [quantum developer survey](https://unitaryfund.github.io/survey-2024/)
+- run [unitaryHack bounty programs](https://unitaryhack.dev/), a community [discord](https://discord.com/invite/2aHChkWPS2), and the major global [quantum developer survey](https://unitaryfoundation.github.io/survey-2024/)
 - publish [research](https://unitary.foundation/research/publications/) on quantum compilation, benchmarking, and foundations
 
 We are now more than a micro-grant fund. All of these programs accelerate our drive to build the open foundation for the quantum technology ecosystem. 

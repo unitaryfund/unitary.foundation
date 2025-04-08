@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { FilterContext } from '~/components/Filter/FilterContextProvider';
-import useFilter, { BlogEntry } from '~/hooks/useFilter';
+import useFilter, { type BlogEntry } from '~/hooks/useFilter';
 import { BlogItem } from './BlogItem';
 
 export function BlogOutput() {

@@ -51,7 +51,7 @@ As the only SDK-agnostic QEM tool[^2], Mitiq's adoption metrics provide a clear 
 </div>
 
 The Quantum Open-Source Software Survey this year indicated that 8.8% of respondents were using Mitiq, with an additional 4.3% planning to use it in the next year.
-This positions Mitiq as the [10th most used tool](https://unitaryfund.github.io/survey-2024/#softwares-for-applications-and-tools-used-currently-or-in-the-future) in the quantum software space&mdash;or **5th** if all Qiskit tools are grouped together.
+This positions Mitiq as the [10th most used tool](https://unitaryfoundation.github.io/survey-2024/#softwares-for-applications-and-tools-used-currently-or-in-the-future) in the quantum software space&mdash;or **5th** if all Qiskit tools are grouped together.
 
 In addition to the tools high adoption, the thriving Mitiq community is a testament to the importance of open-source collaboration.
 From first-time contributors to experienced quantum researchers, everyone has played a role in elevating Mitiq to the tool it is today.
@@ -148,7 +148,7 @@ If this sounds like something you're interested in, I encourage you to get invol
 
 Whether you're a researcher, educator, or software engineer, or quantum tinkerer, there's a place for you in the Mitiq community.
 
-- Check out the [`mitiq`](https://github.com/unitaryfund/mitiq) GitHub repository and contribute by opening issues, asking questions, or making a pull request. If you have a QEM technique you'd like to use, let us know! Feature requests are always appreciated, and encouraged.
+- Check out the [`mitiq`](https://github.com/unitaryfoundation/mitiq) GitHub repository and contribute by opening issues, asking questions, or making a pull request. If you have a QEM technique you'd like to use, let us know! Feature requests are always appreciated, and encouraged.
 - Join our [Discord community](http://discord.unitary.foundation) to connect with me and all the other wonderful Mitiq developers and quantum enthusiasts.
 - Sign up to receive the [Mitiq Newsletter](https://forms.gle/6UcUjSawHyweXhQV7) to stay up to date with the latest happenings.
 

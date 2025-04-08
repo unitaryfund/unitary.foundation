@@ -46,7 +46,7 @@ Beyond the features covered above we recently added modules that allow the user 
 
 We sum up the current functionality of [OQuPy](https://oqupy.readthedocs.io) in the following graphic:
 
-![](../images/oqupy_overview.png)
+![](/images/oqupy_overview.png)
 
 If you have any questions or suggestion please don’t hesitate to get in touch and post an [issue](https://github.com/tempoCollaboration/OQuPy/issues) on GitHub!
 
