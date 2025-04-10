@@ -17,12 +17,12 @@ Special thanks: This work done in QOSF cohort 9 Quantum mentorship program. My g
 
 $$\text{NH}_3$$ production uses 1% of the world's energy. The most widely adopted synthesis method, the Haber-Bosch process, is
 
-$$\begin{align}\text{N}_2 + 3\text{H}_2 \overset{\text{Fe}}{\longrightarrow} 2\text{NH}_3 \end{align}$$
+$$\text{N}_2 + 3\text{H}_2 \overset{\text{Fe}}{\longrightarrow} 2\text{NH}_3$$
 
 However, it is energy-intensive and relies on catalysts. Understanding the reaction pathway with catalyst hopes to gain insights into the process, enhancing its efficiency. [1] has simulated the reaction using VASP using Fe211 as a catalyst as shown in Fig. 1.
 
 <figure>
-  <img src="https://github.com/user-attachments/assets/5c2dbc1b-c124-4041-9f75-2d0e40e0a42d">
+  ::image[5c2dbc1b-c124-4041-9f75-2d0e40e0a42d]
   <figcaption>Fig 1. Reaction pathway of the Harber-Bosch process in [1] </figcaption>
 </figure>
 
@@ -200,7 +200,7 @@ This blog post provides an alternate method to optimize the geometry of the Habe
 - Gradient descent: 32 CPU, 256 GB RAM, 50h runtime
 - BO: 8 CPU, 64 GB RAM, 60h runtime
 
-The parameters of free electrons and free orbitals are crucial parameters to make this project possible as a full configuration interaction can take up to TBs of RAM to calculate. That being said, even this setup can replicate the original paper. Even when we receive the desired result where $$\text{NH}_3$$ is produced, it would be interesting to see if gradient descent can further finetune these positions.
+The parameters of free electrons and free orbitals are crucial parameters to make this project possible as a full configuration interaction can take up to TBs of RAM to calculate. That being said, our current simple setup can replicate the location where $$\text{NH}_3$$ is produced on the catalyst surface.
 
 Comments? Questions? Please let us know at [Issues page](https://github.com/minhtriet/minhtriet.github.io/issues)
 
