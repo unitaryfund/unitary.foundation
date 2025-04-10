@@ -19,7 +19,7 @@ $$\text{NH}_3$$ production uses 1% of the world's energy. The most widely adopte
 However, it is energy-intensive and relies on catalysts. Understanding the reaction pathway with catalyst hopes to gain insights into the process, enhancing its efficiency. [1] has simulated the reaction using VASP using Fe211 as a catalyst as shown in Fig. 1.
 
 <figure>
-  ::image[qhw21ucyucnkhqubcwjp]
+  <img src="/images/c124-4041-9f75-2d0e40e0a42d.png">
   <figcaption>Fig 1. Reaction pathway of the Harber-Bosch process in [1] </figcaption>
 </figure>
 
