@@ -49,13 +49,13 @@ A beautiful property of Gaussian is that when conditioning the Gaussian on a set
 <div class="row">	
 	<div class="column">
  	<figure>
-		<img src="https://github.com/user-attachments/assets/af199fd0-5dbe-4a2c-addb-e9fb6f2ecd2b">
+		<img src="images/af199fd0-5dbe-4a2c-addb-e9fb6f2ecd2b.png">
   		<figcaption>A</figcaption>
   	</figure>
 	</div>
 	<div class="column">
  	<figure>
-		<img src="https://github.com/user-attachments/assets/033cceb6-5ea3-4663-af1f-b17e4708a085">
+		<img src="images/033cceb6-5ea3-4663-af1f-b17e4708a085.png">
   		<figcaption>B</figcaption>
   	</figure>
 	</div>
@@ -82,14 +82,13 @@ To facilitate the calculation with our limited computing resources we made the f
 <div class="row">
 	<div class="column">
 		<figure>
-	<img alt="image" style="margin:0 20%" width="200px" src="https://github.com/user-attachments/assets/c981aea2-1fb2-4cad-95b8-0ba84b8cee11">
-	
-		<figcaption>The Fe211 catalyst substrate used in [1] </figcaption>
+	        <img alt="image" src="https://github.com/user-attachments/assets/c981aea2-1fb2-4cad-95b8-0ba84b8cee11">
+		    <figcaption>The Fe211 catalyst substrate used in [1] </figcaption>
 		</figure>
   	</div>
 	<div class="column">
 		<figure>
-	<img width="200px" style="margin:0 20%" src="https://github.com/user-attachments/assets/aa6a75ec-c8f5-406b-82df-9de6bb4838a6">
+	<img src="https://github.com/user-attachments/assets/aa6a75ec-c8f5-406b-82df-9de6bb4838a6">
  	<figcaption>Our simplified catalyst substrate</figcaption>
 		</figure>
 	</div>
