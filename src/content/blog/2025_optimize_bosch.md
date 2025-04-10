@@ -11,18 +11,15 @@ tags:
 
 **TLDR**: We contribute an approach to simulate chemistry reaction with (1) catalyst and (2) endothermicity in 3D.
 
-Special thanks: This work done in QOSF cohort 9 Quantum mentorship program. My gratitude to my mentor Danial Motlagh and to the organizer QOSF
 
 # Introduction
 
-$$\text{NH}_3$$ production uses 1% of the world's energy. The most widely adopted synthesis method, the Haber-Bosch process, is
-
-$$\text{N}_2 + 3\text{H}_2 \overset{\text{Fe}}{\longrightarrow} 2\text{NH}_3$$
+$$\text{NH}_3$$ production uses 1% of the world's energy. The most widely adopted synthesis method, the Haber-Bosch process, is $$\text{N}_2 + 3\text{H}_2 \overset{\text{Fe}}{\longrightarrow} 2\text{NH}_3$$.
 
 However, it is energy-intensive and relies on catalysts. Understanding the reaction pathway with catalyst hopes to gain insights into the process, enhancing its efficiency. [1] has simulated the reaction using VASP using Fe211 as a catalyst as shown in Fig. 1.
 
 <figure>
-  ::image[5c2dbc1b-c124-4041-9f75-2d0e40e0a42d]
+  ::image[qhw21ucyucnkhqubcwjp]
   <figcaption>Fig 1. Reaction pathway of the Harber-Bosch process in [1] </figcaption>
 </figure>
 
@@ -203,6 +200,9 @@ This blog post provides an alternate method to optimize the geometry of the Habe
 The parameters of free electrons and free orbitals are crucial parameters to make this project possible as a full configuration interaction can take up to TBs of RAM to calculate. That being said, our current simple setup can replicate the location where $$\text{NH}_3$$ is produced on the catalyst surface.
 
 Comments? Questions? Please let us know at [Issues page](https://github.com/minhtriet/minhtriet.github.io/issues)
+
+## Special thanks
+This work done in QOSF cohort 9 Quantum mentorship program. My gratitude to my mentor Danial Motlagh and to the organizer QOSF
 
 # References 
 [1] Reaction mechanism and kinetics for ammonia synthesis on the Fe(211) reconstructed surface. Jon Fuller, Alessandro Fortunelli, William A. Goddard III, and  Qi An. Physical Chemistry Chemical Physics Issue 21, 2019
