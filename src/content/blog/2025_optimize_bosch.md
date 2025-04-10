@@ -49,13 +49,13 @@ A beautiful property of Gaussian is that when conditioning the Gaussian on a set
 <div class="row">	
 	<div class="column">
  	<figure>
-		<img src="images/af199fd0-5dbe-4a2c-addb-e9fb6f2ecd2b.png">
+		<img src="/images/af199fd0-5dbe-4a2c-addb-e9fb6f2ecd2b.png">
   		<figcaption>A</figcaption>
   	</figure>
 	</div>
 	<div class="column">
  	<figure>
-		<img src="images/033cceb6-5ea3-4663-af1f-b17e4708a085.png">
+		<img src="/images/033cceb6-5ea3-4663-af1f-b17e4708a085.png">
   		<figcaption>B</figcaption>
   	</figure>
 	</div>
@@ -209,3 +209,36 @@ This work done in QOSF cohort 9 Quantum mentorship program. My gratitude to my m
 [2] Reiher Markus, Nathan Wiebe, Krysta M. Svore, Dave Wecker and Matthias Troyer. Elucidating reaction mechanisms on quantum computers. Proceedings of the National Academy of Sciences 2017
 
 [3] Kevin Patrick Murphy. Machine Learning: a Probabilistic Perspective. MIT Press, 2012
+
+<style>
+div.flex {
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  align-items:center
+}
+figcaption {
+  text-align:center
+}
+div.row {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  width:100%;
+  align-items:center;
+  justify-content:space-between
+}
+figure image {
+  margin-left:auto;
+  display:block;
+  margin-right:auto
+}
+div.column {
+  display:flex;
+  flex-direction:column;
+  flex-basis:100%;
+  flex:1;
+  align-items:center;
+  justify-content:space-between
+}
+</style>
