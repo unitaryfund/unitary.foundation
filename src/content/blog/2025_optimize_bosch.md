@@ -2,7 +2,7 @@
 title: Optimizing the Molecular geometry of the Haber-Bosch Process with Pennylane
 author: Minh Triet Chau
 day: 27
-month: 3
+month: 4
 year: 2025
 tags: 
   - simulator
