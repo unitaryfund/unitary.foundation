@@ -63,7 +63,7 @@ A beautiful property of Gaussian is that when conditioning the Gaussian on a set
 <figcaption>Figure 2: A. Given initial samplings (red points), how do we predict an unknown point? B. How GP fits a regression line given these ground truths. The confidence interval is the variances of the Gaussian at an arbitrary point, and the prediction is the means</figcaption>
 </figure>
 
-Here, we face a dilemma. In $$\pmb{X}$$ there is a point with the smallest value $x_\min$. Therefore, the next minima should be somewhere close to it. However, it is also possible that points in the wide confidence interval have smaller values than the current minima. To quantify this trade-off, we define an acquisition function $$\alpha$$ to obtain new positions to sample. There are several approaches to define $$\alpha$$, we are using the Expected Improvement (EI) approach here.
+Here, we face a dilemma. In $$\pmb{X}$$ there is a point with the smallest value $$x_{min}$$. Therefore, the next minima should be somewhere close to it. However, it is also possible that points in the wide confidence interval have smaller values than the current minima. To quantify this trade-off, we define an acquisition function $$\alpha$$ to obtain new positions to sample. There are several approaches to define $$\alpha$$, we are using the Expected Improvement (EI) approach here.
 
 EI works by generating random functions that lie inside the confident intervals, as demonstrated in Figure 3. The intuition is a larger confidence interval would have more diverse sampling functions. Afterward, we sample the point at the extrema and update the prior. The process continues for a predefined number of steps.
 <div class="row">
