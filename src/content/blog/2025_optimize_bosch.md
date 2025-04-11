@@ -99,10 +99,10 @@ We will replicate the first three steps of Figure 2, whose Hamiltonians are the 
  
 In the below visualization, we color-coded the atoms as 
 <span class="boxed fe">
-      $$Fe$$
+      $$\text{Fe}$$
 </span>
 <span class="boxed n">
-      $$N$$
+      $$\text{N}$$
 </span>, and
 <span class="boxed h">
        $$\text{H}$$
