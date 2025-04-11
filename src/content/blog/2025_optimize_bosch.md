@@ -168,7 +168,7 @@ Due to the nature of the acquisition function, the plot of the ground state ener
 
 We conclude that the search boundary condition is of utmost importance. Accordingly, we modify the search space as below.
 <figure>
-   <img src="/images/356767472-0fd1987e-55d7-40f3-ac2d-6231d561a95d.png">
+   <img src="/images/0fd1987e-55d7-40f3-ac2d-6231d561a95d.png">
   <figcaption>The size of the search boundary in comparison with a $$\text{Fe}$$ atom</figcaption>
 </figure>
 
