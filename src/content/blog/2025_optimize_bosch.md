@@ -69,7 +69,7 @@ EI works by generating random functions that lie inside the confident intervals,
 <div class="row">
 	<div class="column">
 <figure>
-<img src="https://github.com/user-attachments/assets/a3cd9cbd-da05-40a2-a61d-8f18760cda38">
+<img src="/images/a3cd9cbd-da05-40a2-a61d-8f18760cda38.png">
 <figcaption>Figure 3. Given the prior in solid blue, EI generates two candidates (dashed red and green lines) that satisfy the confidence interval requirements. Consequently, we sample the real value at the point marked with "?"</figcaption>
 </figure>
 	</div>
@@ -82,13 +82,13 @@ To facilitate the calculation with our limited computing resources we made the f
 <div class="row">
 	<div class="column">
 		<figure>
-	        <img alt="image" src="https://github.com/user-attachments/assets/c981aea2-1fb2-4cad-95b8-0ba84b8cee11">
+	        <img alt="image" src="/images/c981aea2-1fb2-4cad-95b8-0ba84b8cee11.png">
 		    <figcaption>The Fe211 catalyst substrate used in [1] </figcaption>
 		</figure>
   	</div>
 	<div class="column">
 		<figure>
-	<img src="https://github.com/user-attachments/assets/aa6a75ec-c8f5-406b-82df-9de6bb4838a6">
+	<img src="/images/aa6a75ec-c8f5-406b-82df-9de6bb4838a6.png">
  	<figcaption>Our simplified catalyst substrate</figcaption>
 		</figure>
 	</div>
@@ -114,19 +114,19 @@ We fix the coordinates of the catalyst substrate and use the gradient descent me
 <div class="row">
 	<div class="column">
 		<figure>
-		<img style="scale: 80%" src="https://github.com/user-attachments/assets/0463d31a-b969-42af-9cef-c7c4c7cbbb72">
+		<img style="scale: 80%" src="/images/355275392-0463d31a-b969-42af-9cef-c7c4c7cbbb72.png">
 		<figcaption>A</figcaption>
 		</figure>
 	</div>
 	<div class="column">
 		<figure>
-		<img src="https://github.com/user-attachments/assets/3213af70-d246-43c7-859d-5c12cb607d5e">
+		<img src="/images/355273309-3213af70-d246-43c7-859d-5c12cb607d5e.gif">
 		<figcaption>B</figcaption>
 		</figure>
 	</div>
 	<div class="column">
 		<figure>
-		<img src="https://github.com/user-attachments/assets/ad7863f8-26a2-4ebd-93fa-83bdc119fc14">
+		<img src="/images/356906338-ad7863f8-26a2-4ebd-93fa-83bdc119fc14.gif">
 		<figcaption>C</figcaption>
 		</figure>
   	</div>
@@ -139,36 +139,36 @@ Even with the same learning rate, the speed of the reactants slows down greatly 
 In this step, we add $$H_2$$ as a reactant. To minimize the time to build the Hamiltonian, we fix the coordinates of all the reactants of the previous step. Since gradient descent works before, let's apply the same method.
 <div class="row">
 <div class="column">
- 	<img alt="image" src="https://github.com/user-attachments/assets/e02f4911-6a03-4fde-82bf-d81f0250f94f">
+ 	<img alt="image" src="/images/354735960-e02f4911-6a03-4fde-82bf-d81f0250f94f.png">
  </div>
  <div class="column">
- 	<img alt="image" src="https://github.com/user-attachments/assets/523ecb70-6cf6-4c20-a077-0f957f0b255e">
+ 	<img alt="image" src="/images/354742674-523ecb70-6cf6-4c20-a077-0f957f0b255e.gif">
  </div>
 </div>
 Note the moving speed of the reactants is much slower than the previous step. Therefore, it is clear that we are stuck at a local minimum, and gradient descent would have a hard time escaping it without modeling the endothermicity of this reaction ($$0.98$$ below the arrow). Let us try with BO to see if it can overcome this minima.
 
 <div class="row">
  <div class="column">
-        <img alt="image" src="https://github.com/user-attachments/assets/513c5f1e-ec65-4a97-b6d7-403902fb096a">
+        <img alt="image" src="/images/356371643-513c5f1e-ec65-4a97-b6d7-403902fb096a.gif">
 </div>
 <div class="column">
-        <img src="https://github.com/user-attachments/assets/ede2698a-2db0-41d1-a3c5-27c8bb818aa9">
+        <img src="/images/356761793-ede2698a-2db0-41d1-a3c5-27c8bb818aa9.gif">
 </div>
 </div>
 Due to the nature of the acquisition function, the plot of the ground state energy does not decrease nicely as seen in the gradient descent. Most of the $$\text{H}$$ atoms went too far away from the catalyst substrate, due to our initial setup of the search margin, which is $$1 nm$$ bigger than the catalyst substrate. Here we filter only what went inside the substrate.
 
  <div class="row">
 <div class="column">
- ﻿<img alt="image" src="https://github.com/user-attachments/assets/3673603c-4900-4453-84b8-e9cfd8ece620">
+ <img alt="image" src="/images/356394575-3673603c-4900-4453-84b8-e9cfd8ece620.gif">
  </div>
   <div class="column">
- ﻿<img src="https://github.com/user-attachments/assets/2017c7e1-885e-4265-a1cf-1852f65c67a1">
+ <img src="/images/356399358-2017c7e1-885e-4265-a1cf-1852f65c67a1.gif">
 </div>
 </div>
 
 We conclude that the search boundary condition is of utmost importance. Accordingly, we modify the search space as below.
 <figure>
-   ﻿<img src="https://github.com/user-attachments/assets/0fd1987e-55d7-40f3-ac2d-6231d561a95d">
+   <img src="/images/356767472-0fd1987e-55d7-40f3-ac2d-6231d561a95d.png">
   <figcaption>The size of the search boundary in comparison with a $$\text{Fe}$$ atom</figcaption>
 </figure>
 
@@ -176,12 +176,12 @@ Here is the optimization after setting the search boundary. We made these demons
  <div class="row">
 <div class="column">
  <video controls autoplay mute loop>
- <source src="https://github.com/user-attachments/assets/58da4eaa-548d-4c2b-8c57-eb7368073973" type="video/mp4"/>
+ <source src="/images/357620305-58da4eaa-548d-4c2b-8c57-eb7368073973.mp4" type="video/mp4"/>
 </video>
 </div>
 <div class="column">
  <video controls autoplay mute loop>
- <source src="https://github.com/user-attachments/assets/000ac2a4-21fe-4055-b48f-da7da6998d4f" type="video/mp4"/>
+ <source src="/images/357975419-000ac2a4-21fe-4055-b48f-da7da6998d4f.mp4" type="video/mp4"/>
 </video>
  </div>
  </div>
