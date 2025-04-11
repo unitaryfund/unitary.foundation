@@ -55,7 +55,7 @@ A beautiful property of Gaussian is that when conditioning the Gaussian on a set
 	</div>
 	<div class="column">
  	<figure>
-		<img src="/images/033cceb6-5ea3-4663-af1f-b17e4708a085.png">
+		<img src="/images/358421422-033cceb6-5ea3-4663-af1f-b17e4708a085.png">
   		<figcaption>B</figcaption>
   	</figure>
 	</div>
