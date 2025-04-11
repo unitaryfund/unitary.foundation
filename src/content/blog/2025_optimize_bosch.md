@@ -211,6 +211,23 @@ This work done in QOSF cohort 9 Quantum mentorship program. My gratitude to my m
 [3] Kevin Patrick Murphy. Machine Learning: a Probabilistic Perspective. MIT Press, 2012
 
 <style>
+.boxed {      
+    color: black;
+    border: 3px solid #535353;        
+    padding: 5px 20px;
+    border-radius: 10px;
+    margin: 7px;
+}
+
+.fe {
+  background: #e06633;
+}
+.n{
+    background: #3050f8;
+}
+.h{
+    background: #fefefe;
+}
 div.flex {
   display:flex;
   justify-content:space-between;
