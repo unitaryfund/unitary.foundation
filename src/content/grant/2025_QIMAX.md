@@ -3,7 +3,7 @@ name: QIMAX A Quantum Emulator on FPGA for High Power Efficiency
 year: 2025
 month: 1
 day: 27
-country: Vietnam
+country: VN
 tags:
   - hardware
   - simulator
