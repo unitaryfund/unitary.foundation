@@ -10,7 +10,7 @@ tags:
 
 Having a somewhat unorthodox background, my introduction into the quantum computing space actually began with a TikTok video.
 Like any other computer engineering student in their mid-30s stuck at home during a pandemic lockdown, the app seemed like a fun way to pass some boredom. 
-I was later introduced to Unitary Fund through my participation in the [Quantum Open Source Foundation's](https://qosf.org/) Quantum [Mentorship Program](https://qosf.org/qc_mentorship/), where the project I chose to undertake was to make a meaningful contribution to Unitary Fund's error-mitigation toolkit [Mitiq](https://github.com/unitaryfund/mitiq).
+I was later introduced to Unitary Fund through my participation in the [Quantum Open Source Foundation's](https://qosf.org/) Quantum [Mentorship Program](https://qosf.org/qc_mentorship/), where the project I chose to undertake was to make a meaningful contribution to Unitary Fund's error-mitigation toolkit [Mitiq](https://github.com/unitaryfoundation/mitiq).
 
 ## Discovering Quantum Computing
 
@@ -47,7 +47,7 @@ Along with that sense of community, following along during the meetings helped m
 Decorators already existed for ZNE at the time, so this task was essentially making it so users could have the same or similar options for how to implement both techniques within their programs.
 In addition to that contribution, I made a few others that were mostly focused on organizing testing and improving documentation.
 
-While I was working on my contributions to Mitiq, I found out about Unitary Fund’s [Unitary Hack 2021](https://unitaryfund.github.io/unitaryhack/) quantum hackathon and started learning about what other projects existed.
+While I was working on my contributions to Mitiq, I found out about Unitary Fund’s [Unitary Hack 2021](https://unitaryfoundation.github.io/unitaryhack/) quantum hackathon and started learning about what other projects existed.
 Having done a bunch of work with networking back when I was in the military, [QuNetSim](https://github.com/tqsd/QuNetSim), a quantum-enabled network simulator, caught my eye.
 As part of the hackathon, I improved the template used to generate a default network, and I improved upon and expanded another hacker’s contribution to automatically generate standard topologies.
 

@@ -5,7 +5,7 @@ import { FilterRenderer } from '~/components/Filter/Renderer/FilterRenderer';
 import { Button } from '~/components/Ui/Form/Button';
 import { Icon } from '~/components/Ui/Icon';
 import { cn } from '~/util/cn';
-import { FilterMode, filterMap, filterModeAtom } from '~/util/store';
+import { type FilterMode, filterMap, filterModeAtom } from '~/util/store';
 
 export function Filters() {
   // Values come from /src/styles/base/_variables.scss and are used to prevent a top-gap in the filter

@@ -22,7 +22,7 @@ However, error mitigation strategies could solve some of the problems associated
 
 ## Mitiq Overview
 
-[Mitiq](https://github.com/unitaryfund/mitiq) is a platform agnostic error mitigation software library with three built in error mitigation methods: zero noise extrapolation, probabilistic error cancellation, and clifford data regression. Through the course of this project, I worked with the Mitiq team and contributed to the documentation and benchmarking techniques (more on that later).
+[Mitiq](https://github.com/unitaryfoundation/mitiq) is a platform agnostic error mitigation software library with three built in error mitigation methods: zero noise extrapolation, probabilistic error cancellation, and clifford data regression. Through the course of this project, I worked with the Mitiq team and contributed to the documentation and benchmarking techniques (more on that later).
 
 ## My Experience with Mitiq
 
@@ -44,7 +44,7 @@ It’s these limitations with Loschmidt echo circuits that prompted the creation
 
 This is an example of a simple, single layer randomized mirror circuit. The nice thing about randomized mirror circuits is it still only has one possible output making it easy to use for benchmarking quantum processors, while minimizing the problems present in Loschmidt echo circuits.
 
-I implemented a function in Mitiq (code [here](https://github.com/unitaryfund/mitiq/blob/master/mitiq/benchmarks/mirror_circuits.py)) to generate these randomized mirror circuits for any provided computer architecture. Through conversions, users can easily get mirror circuits in any existing package supported by Mitiq, for example Cirq, Qiskit, pyQuil, Pennylane, and the Amazon Braket SDK. This function provides another benchmarking circuit to easily test error mitigation methods in Mitiq. For example, the Mitiq team has already used mirror circuits to benchmark zero-noise extrapolation on Rigetti devices through AWS ([blogpost](https://aws.amazon.com/blogs/quantum-computing/exploring-quantum-error-mitigation-with-mitiq-and-amazon-braket/), [notebook](https://mitiq.readthedocs.io/en/stable/examples/braket_mirror_circuit.html#define-the-circuit)).
+I implemented a function in Mitiq (code [here](https://github.com/unitaryfoundation/mitiq/blob/master/mitiq/benchmarks/mirror_circuits.py)) to generate these randomized mirror circuits for any provided computer architecture. Through conversions, users can easily get mirror circuits in any existing package supported by Mitiq, for example Cirq, Qiskit, pyQuil, Pennylane, and the Amazon Braket SDK. This function provides another benchmarking circuit to easily test error mitigation methods in Mitiq. For example, the Mitiq team has already used mirror circuits to benchmark zero-noise extrapolation on Rigetti devices through AWS ([blogpost](https://aws.amazon.com/blogs/quantum-computing/exploring-quantum-error-mitigation-with-mitiq-and-amazon-braket/), [notebook](https://mitiq.readthedocs.io/en/stable/examples/braket_mirror_circuit.html#define-the-circuit)).
 
 ## Other Works
 

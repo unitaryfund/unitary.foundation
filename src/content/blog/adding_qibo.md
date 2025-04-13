@@ -9,7 +9,7 @@ tags:
 - Mitiq
 ---
 
-**In the latest Mitiq release, [v0.34.0](https://github.com/unitaryfund/mitiq/discussions/2194), support for [Qibo](https://qibo.science/) has been announced as a newly integrated frontend.** 
+**In the latest Mitiq release, [v0.34.0](https://github.com/unitaryfoundation/mitiq/discussions/2194), support for [Qibo](https://qibo.science/) has been announced as a newly integrated frontend.** 
 
 This addition expands Mitiq's list of supported frontends, formerly consisting of Cirq, Qiskit, pyQuil, Braket, and PennyLane, to now include Qibo.
 ![Qibo Mitiq integration.](/images/qibo-mitiq.png)

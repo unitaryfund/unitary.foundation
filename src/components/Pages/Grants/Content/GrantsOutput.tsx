@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { FilterContext } from '~/components/Filter/FilterContextProvider';
 import useGrantsByYear from '~/hooks/useGrantsByYear';
-import useFilter, { GrantEntry } from '~/hooks/useFilter';
+import useFilter, {type GrantEntry } from '~/hooks/useFilter';
 import { GrantItem } from './GrantItem';
 import { cn } from '~/util/cn';
 

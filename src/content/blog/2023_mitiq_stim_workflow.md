@@ -42,7 +42,7 @@ Of the stabilizer simulators tested, Stim was the one that could execute all nec
 Furthermore, we were able to demonstrate ZNE effectively mitigating errors on the deeper logical RB circuits as well, strengthening the case for ZNE on logical circuits.
 
 ## Quantum community impact
-Ultimately, the [research code](https://github.com/unitaryfund/research/tree/main/ds_zne) for simulating logical circuits on the Stim backend and applying ZNE with Mitiq was reused and streamlined into a tutorial in the gallery of [examples](https://mitiq.readthedocs.io/en/stable/examples/examples.html) in the Mitiq documentation.
+Ultimately, the [research code](https://github.com/unitaryfoundation/research/tree/main/ds_zne) for simulating logical circuits on the Stim backend and applying ZNE with Mitiq was reused and streamlined into a tutorial in the gallery of [examples](https://mitiq.readthedocs.io/en/stable/examples/examples.html) in the Mitiq documentation.
 In addition to the positive results, the project became an encouraging case study for open science and the use of constructive community feedback in refining scientific work.
 It also motivated a new connection between two powerful open quantum software tools, Mitiq and Stim, paving the way for future demonstrations combining QEM and QEC to minimize the effect of errors in quantum computations.
 

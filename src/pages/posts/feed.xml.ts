@@ -1,5 +1,5 @@
 import rss from '@astrojs/rss';
-import { CollectionEntry, getCollection } from 'astro:content';
+import { type CollectionEntry, getCollection } from 'astro:content';
 import sanitizeHtml from 'sanitize-html';
 import MarkdownIt from 'markdown-it';
 
@@ -13,7 +13,7 @@ function getDateFromPost(post: CollectionEntry<"blog">): Date {
   return new Date(`${post.data.year}-${post.data.month}-${post.data.day}`);
 }
 
-export async function get(context: SiteContext) {
+export async function GET(context: SiteContext) {
   const posts = await getCollection('blog');
   // Sort the posts by date in descending order
   const sortedPosts = posts.sort((a, b) => {
