@@ -39,7 +39,7 @@ Metriq already includes more than 150 submissions across quantum computing appli
 
 **Metriq organizes benchmark information transparently, by and for the community.**
 
-The full source code of all components of Metriq app are free and public via the Unitary Fund GitHub organization, including [web front end](https://github.com/unitaryfund/metriq-app), [REST API back end](https://github.com/unitaryfund/metriq-api), and [PostgreSQL database schema creation scripts](https://github.com/unitaryfund/metriq-postgres). Code is provided under [Apache License 2.0](https://github.com/unitaryfund/metriq-app/blob/main/LICENSE), and content is contributed under (Creative Commons) [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
+The full source code of all components of Metriq app are free and public via the Unitary Fund GitHub organization, including [web front end](https://github.com/unitaryfoundation/metriq-app), [REST API back end](https://github.com/unitaryfoundation/metriq-api), and [PostgreSQL database schema creation scripts](https://github.com/unitaryfoundation/metriq-postgres). Code is provided under [Apache License 2.0](https://github.com/unitaryfoundation/metriq-app/blob/main/LICENSE), and content is contributed under (Creative Commons) [CC-BY-SA](https://creativecommons.org/licenses/by-sa/4.0/).
 
 Metriq is endorsed by a growing group of partners from across startups, national labs, research groups, and deep tech investors including IQT Labs, USRA, RIKEN, the SQMS quantum research center, Cambridge Quantum, Strangeworks, Agnostiq, Super.Tech, Quantonation, and Unitary Fund.
 
@@ -63,6 +63,6 @@ Whether you are a professional quantum hardware researcher, a quantum software d
 If you’d like to learn more or have help making a submission then reach out to us at metriq@unitary.foundation.
 
 <div style="text-align: center;">
-    <a href="https://metriq.info/"><img src="../images/metriq_logo_primary_blue_inverted.png" alt='Metriq logo' /></a>
+    <a href="https://metriq.info/"><img src="/images/metriq_logo_primary_blue_inverted.png" alt='Metriq logo' /></a>
 </div>
 

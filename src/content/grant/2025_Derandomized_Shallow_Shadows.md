@@ -3,7 +3,7 @@ name: Derandomized Shallow Shadows
 year: 2025
 month: 1
 day: 27
-country: Canada
+country: US
 tags:
   - Algorithms
   - Python

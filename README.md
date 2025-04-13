@@ -113,9 +113,9 @@ tags:
 To **Hanrui Wang** to further develop **[TorchQuantum](https://github.com/mit-han-lab/torchquantum)**, a Quantum classical simulation framework based on PyTorch.
 ```
 ### Open a PR to add the file on a new grant
-If you have a Github account, you can directly add a new markdown file to add a new grant by [clicking here](https://github.com/unitaryfund/unitary.foundation/new/main/src/content/grant) and then opening a pull request (PR). 
+If you have a Github account, you can directly add a new markdown file to add a new grant by [clicking here](https://github.com/unitaryfoundation/unitary.foundation/new/main/src/content/grant) and then opening a pull request (PR). 
 
 ## Run the website locally
 
-Information on how to run the website locally are given in the [developer docs](https://github.com/unitaryfund/unitary.foundation/wiki/Developer-docs) wiki.
+Information on how to run the website locally are given in the [developer docs](https://github.com/unitaryfoundation/unitary.foundation/wiki/Developer-docs) wiki.
 

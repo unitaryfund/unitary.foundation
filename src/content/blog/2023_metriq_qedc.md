@@ -34,9 +34,9 @@ is a “living” result in that it is *automatically* updated with benchmarks
 obtained by running the QED-C code on a variety of hardware offerings. 
 
 On [Metriq](https://metriq.info/), we have established an [automated
-pipeline](https://github.com/unitaryfund/metriq-api/tree/main/benchmark) that
+pipeline](https://github.com/unitaryfoundation/metriq-api/tree/main/benchmark) that
 is able to run and update our submission via a
-[fork](https://github.com/unitaryfund/QC-App-Oriented-Benchmarks) of the QED-C
+[fork](https://github.com/unitaryfoundation/QC-App-Oriented-Benchmarks) of the QED-C
 benchmarking suite. This pipeline enables anyone to automatically run
 benchmarks for a specific algorithm, hardware provider, and quantum processor.
 This allows the Metriq community to continually extend the benchmarking
@@ -44,7 +44,7 @@ foundation provided by QED-C to expand their results by running on further
 hardware providers to obtain up-to-date results.
 
 The backbone of the pipeline is powered by the
-[metriq-client](https://github.com/unitaryfund/metriq-client) project. This
+[metriq-client](https://github.com/unitaryfoundation/metriq-client) project. This
 client allows the user to interface with the Metriq platform via a Python API.
 The user can perform queries or upload batched results via a Python script for
 submissions that may entail a sizeable amount of results that would be

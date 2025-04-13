@@ -8,7 +8,7 @@ tags:
   - Members
 ---
 
-Since 2018, Unitary Fund has supported the open quantum technology ecosystem around the world. We’ve awarded more than 50 [microgrants](https://unitary.foundation/grants.html) to projects from more than 20 countries, developed the leading error-mitigating quantum [compiler](https://unitary.foundation/mitiq.html), run [hackathons](https://unitaryfund.github.io/unitaryhack/), and supported open source community building.
+Since 2018, Unitary Fund has supported the open quantum technology ecosystem around the world. We’ve awarded more than 50 [microgrants](https://unitary.foundation/grants.html) to projects from more than 20 countries, developed the leading error-mitigating quantum [compiler](https://unitary.foundation/mitiq.html), run [hackathons](https://unitaryfoundation.github.io/unitaryhack/), and supported open source community building.
 
 Today, Unitary Fund is proud to announce our new corporate member program. We thank these organizations for their support and look forward to their further contributions in the coming year.
 
@@ -39,4 +39,4 @@ To learn more about our new member program, email info@unitary.foundation.
 #### About Unitary Fund
 Unitary Fund is a 501(c)(3) non-profit whose mission is to create a quantum technology ecosystem that benefits the people around the world. We believe that expanding the pool of people working on quantum technologies is a way to ensure that the benefits of these tools are widely, swiftly, and equitably distributed. We primarily use two major programs to pursue this mission.Through Unitary Labs we work on in-house projects that help the ecosystem as a whole. Through our microgrant program, we fund an inclusive community of explorers across the world to work on quantum technologies.
 
-<p class="leading-block"> Stay up to date with what Unitary Fund is working on by following us on <a href="https://twitter.com/unitaryfund" target="_blank">Twitter</a>, <a href="https://github.com/unitaryfund" target="_blank">GitHub</a>, and <a href="https://www.linkedin.com/company/unitary-fund" target="_blank">LinkedIn</a>!</p>
+<p class="leading-block"> Stay up to date with what Unitary Fund is working on by following us on <a href="https://twitter.com/unitaryfund" target="_blank">Twitter</a>, <a href="https://github.com/unitaryfoundation" target="_blank">GitHub</a>, and <a href="https://www.linkedin.com/company/unitary-fund" target="_blank">LinkedIn</a>!</p>

@@ -44,7 +44,7 @@ These new features, together with all the additional changes that are reported i
 
 The re-submitted version has now 13 authors and, in the spirit of open-source projects, we hope that even more people will be involved in the future.
 
-All Mitiq contributors are now proudly [acknowledged](https://github.com/unitaryfund/mitiq#contributors-) in the README page of Mitiq, where you can also find the links to their GitHub accounts.
+All Mitiq contributors are now proudly [acknowledged](https://github.com/unitaryfoundation/mitiq#contributors-) in the README page of Mitiq, where you can also find the links to their GitHub accounts.
 
   
 

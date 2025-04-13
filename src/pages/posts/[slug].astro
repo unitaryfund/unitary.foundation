@@ -1,7 +1,6 @@
 ---
 import Layout from '~/layouts/Layout.astro';
-import { getCollection, getEntry } from 'astro:content';
-import type { CollectionEntry } from 'astro:content';
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
 import PostComments from '~/components/Pages/Blog/PostComments.astro';
 
 export async function getStaticPaths() {

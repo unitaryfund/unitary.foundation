@@ -3,7 +3,7 @@ name: LR-QAOA Quantum Benchmark
 year: 2025
 month: 2
 day: 24
-country: Germany
+country: DE
 tags:
   - benchmarking
   - metriq
