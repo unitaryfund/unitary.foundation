@@ -3,7 +3,7 @@ name: PauLie
 year: 2025
 month: 3
 day: 31
-country: Germany
+country: DE
 tags:
   - machine learning
   - alegebra
