@@ -9,4 +9,4 @@ tags:
   - alegebra
   - followup grant
 ---
-To **Konstantin Golovkin and Oxana Shaya** to further develop and extend their project, [PauLie](https://github.com/QPauLie/PauLie).
+To **Konstantin Golovkin and Oxana Shaya** to further develop and extend their project, [PauLie](https://github.com/QPauLie/PauLie), an open-source library for studying various algebraic properties of quantum circuits.
