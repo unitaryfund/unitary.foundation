@@ -16,7 +16,7 @@ Over the past few years the development and progressive availability of quantum 
  
 ## About the workshop
 
-The Workshop on Error Resilience in Quantum computing (WERQSHOP) will bring together researchers, developers, and practitioners working on all aspects of QEM and error resilient compilation — from sample complexity to the implementation of protocols in real-world quantum computing pipelines.
+The Workshop on Error Resilience in Quantum computing ([WERQSHOP](https://werq.shop/)) will take place June 17-19 at New York University in New York City and will bring together researchers, developers, and practitioners working on all aspects of QEM and error resilient compilation — from sample complexity to the implementation of protocols in real-world quantum computing pipelines.
 
 The goal is to foster collaboration between:
 Software developers building open source QEM tooling and integrations,
@@ -50,4 +50,6 @@ Unitary Foundation has performed research to develop QEM techniques and a softwa
 
 ## Funding and acknowledgements
 
-WERQSHOP is made possible by funding from the National Science Foundation (NSF), under a [POSE Phase II grant](https://unitary.foundation/posts/2023_mitiq_nsf_pose/) for the development of an open source ecosystem for Mitiq. Additional funding for Mitiq, quantum error mitigation research by Unitary Foundation and development of next generation compilers and quantum benchmarks has been provided by IBM Research, the US Department of Energy ARQC TEAM program and ASCR SMART Stack program.
+WERQSHOP is made possible by funding from the National Science Foundation (NSF), under a [POSE Phase II grant](https://unitary.foundation/posts/2023_mitiq_nsf_pose/) for the development of an open source ecosystem for Mitiq. Additional funding for Mitiq, quantum error mitigation research by Unitary Foundation and development of next generation compilers and quantum benchmarks has been provided by IBM Research, the US Department of Energy ARQC TEAM program and ASCR SMART Stack program. Unitary Foundation acknowledges additional support from its Members.
+
+Last but not least, this workshop is made possible thanks to a number of volunteers co-organizing it, a complete list can be found on the [WERQSHOP](https://werq.shop/) website.  
