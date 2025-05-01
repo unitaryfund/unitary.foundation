@@ -33,8 +33,8 @@ Unlike that first event, this workshop is focused specifically on quantum error 
 ## Important Dates
 
 Important deadlines are: 
-May 15, 2025, for submissions
-May 31, 2025 for participating
+- May 15, 2025, for submissions
+- May 31, 2025 for participating
 
 Want to join us, or give a talk? Apply [here](https://forms.gle/jEEyzexC3hufZ7jT8).
 
