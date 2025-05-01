@@ -19,10 +19,10 @@ Over the past few years the development and progressive availability of quantum 
 The Workshop on Error Resilience in Quantum computing ([WERQSHOP](https://werq.shop/)) will take place June 17-19 at New York University in New York City and will bring together researchers, developers, and practitioners working on all aspects of QEM and error resilient compilation — from sample complexity to the implementation of protocols in real-world quantum computing pipelines.
 
 The goal is to foster collaboration between:
-Software developers building open source QEM tooling and integrations,
-Researchers exploring the feasibility and limitations of QEM,
-Practitioners applying QEM to improve near-term quantum hardware,
-Compiler developers working to enable seamless QEM integration.
+- Software developers building open source QEM tooling and integrations,
+- Researchers exploring the feasibility and limitations of QEM,
+- Practitioners applying QEM to improve near-term quantum hardware,
+- Compiler developers working to enable seamless QEM integration.
 
 By convening this diverse group, we aim to generate focused ideas on what to research and what to build next in QEM, especially in the context of early fault-tolerant quantum computing (eFTQC).
 
