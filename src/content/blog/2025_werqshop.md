@@ -26,7 +26,7 @@ Compiler developers working to enable seamless QEM integration.
 
 By convening this diverse group, we aim to generate focused ideas on what to research and what to build next in QEM, especially in the context of early fault-tolerant quantum computing (eFTQC).
 
-This is the second workshop organized by the Mitiq team. The [first event](https://unitary.foundation/posts/2024_recap_mitiq_workshop/) was held in 2024 as part of the [qnumerics Summer School](https://qnumerics.org/2024/) at the University of Massachusetts Amherst – Mt. Ida Campus, where we introduced Mitiq in the broader context of quantum computing and numerics.
+This is the second workshop organized by the Mitiq team. The [first event](https://unitary.foundation/posts/2024_recap_mitiq_workshop/) was held in 2024 as part of the [QNumerics Summer School](https://qnumerics.org/2024/) at the University of Massachusetts Amherst – Mt. Ida Campus, where we introduced Mitiq in the broader context of quantum computing and numerics.
 
 Unlike that first event, this workshop is focused specifically on quantum error mitigation and resilience techniques, and is not limited to Mitiq.
 
