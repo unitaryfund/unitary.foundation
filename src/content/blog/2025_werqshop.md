@@ -1,5 +1,5 @@
 ---
-title: WERQSHOP: Workshop on Error Resilience in Quantum computing
+title: WERQSHOP, the Workshop on Error Resilience in Quantum computing
 author: WERQSHOP organizers
 day: 1
 month: 5
