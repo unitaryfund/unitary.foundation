@@ -14,7 +14,7 @@ tags:
 
 Today's quantum scientists and developers are constrained by a fundamental limitation: **high error rates prevent meaningful quantum programs from running at scale**.
 While we can run small, illustrative algorithms on current devices, their depth and complexity are tightly bounded by noise.
-Progress toward useful quantum computing will depend not just on hardware improvements, but on how well we can reduce, manage, and mitigate error in the systems we already have.
+Progress toward useful quantum computing will depend not just on hardware improvements, but on how well we can reduce, manage, and mitigate errors in the systems we already have.
 
 In recent years, researchers have responded with a wave of innovations in quantum error mitigation (QEM) &mdash; techniques that suppress or reverse the effects of noise without requiring full fault tolerance.
 At the same time, we're entering an era where early fault-tolerant quantum computing (eFTQC) is starting to emerge.
