@@ -7,6 +7,6 @@ country: DE
 tags:
   - machine learning
   - alegebra
-  - followup grant
+  - follow-up grant
 ---
 To **Konstantin Golovkin and Oxana Shaya** to further develop and extend their project, [PauLie](https://github.com/QPauLie/PauLie), an open-source library for studying various algebraic properties of quantum circuits.
