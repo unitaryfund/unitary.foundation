@@ -59,7 +59,7 @@ We will expect you to have 3+ years of professional experience relevant to:
 **International** - We work globally with many cultures and institutions.
 (for US employees) - full 401k plan and healthcare benefits
 
-**Compensation** - The UF team is remote first. As such, the salary for this position can range depending on competitive rates in your local ecosystem. The pay range for this position is 50,000-120,000 USD. 
+**Compensation** - The UF team is remote first. As such, the salary for this position can range depending on competitive rates in your local ecosystem. The pay range for this position is \$50,000-120,000 USD. 
 
 Unitary Foundation is committed to creating a diverse environment. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.
 
