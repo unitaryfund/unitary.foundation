@@ -27,4 +27,4 @@ export const QuestionAnswer = {
   Question: QuestionAnswerQuestion,
   Answer: QuestionAnswerAnswer,
 };
-export { default as AddEventCalendar } from './Content/AddEventCalendar.astro';
+export { default as GoogleCalendarEmbed } from './Content/GoogleCalendarEmbed.astro';
