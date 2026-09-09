@@ -1,59 +1,406 @@
 ---
 title: Mitiq
 layout: '~/layouts/Layout.astro'
+metaDescription: Open-source, hardware-agnostic quantum error mitigation with Mitiq.
+bodyClassName: mitiq
 ---
 
-import { PageIntro, TwoColumn, Column, ReducedWidth } from '~/components/Ui';
+import MitiqInstall from '~/components/MitiqInstall.astro';
 
-<PageIntro>
-# Quantum computers have errors
+<main class="mitiq-page">
+  <section class="mitiq-hero" aria-labelledby="mitiq-title">
+    <div class="mitiq-shell mitiq-hero-grid">
+      <div class="mitiq-hero-copy">
+        <div class="mitiq-brand-row">
+          <img class="mitiq-logo" src="/images/mitiq-logo.png" alt="Mitiq" />
+          <p class="mitiq-kicker">Platform-independent by design</p>
+        </div>
+        <h1 id="mitiq-title">Open tools for <span>noisy hardware.</span></h1>
+        <p class="mitiq-lede">Mitiq is a Python toolkit for reducing the impact of noise on quantum computations—without locking research to one SDK or hardware provider.</p>
+        <div class="mitiq-actions">
+          <a class="mitiq-button mitiq-button-primary" href="https://mitiq.readthedocs.io/en/stable/">Start with Mitiq <span aria-hidden="true">→</span></a>
+          <a class="mitiq-button mitiq-button-secondary" href="https://github.com/unitaryfoundation/mitiq">View on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="mitiq-release-row">
+          <a class="mitiq-release-note" href="https://github.com/unitaryfoundation/mitiq/releases/tag/v1.1.0">
+            <strong>New in v1.1.0</strong><span>Debiasing, hardware-agnostic PEA, and more</span><span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
 
-**`mitiq`** is a cross platform compiler that makes your programs robust to those errors.
+      <div class="mitiq-signal-column">
+        <div class="mitiq-signal-card" aria-label="Published cross-platform error mitigation results">
+          <p class="mitiq-big-number">1–7<span>×</span></p>
+          <p class="mitiq-card-title">resource-normalized improvement</p>
+          <div class="mitiq-study-meta">
+            <div>
+              <span>Techniques</span>
+              <strong>ZNE + PEC</strong>
+            </div>
+            <div>
+              <span>Hardware</span>
+              <strong>IBM · IonQ · Rigetti</strong>
+            </div>
+          </div>
+          <p class="mitiq-card-note">Observed across two benchmark problems; results varied by machine and are not a universal performance guarantee.<sup><a href="#source-1">1</a></sup></p>
+        </div>
+        <MitiqInstall />
+      </div>
+    </div>
+  </section>
 
-</PageIntro>
+  <section class="mitiq-proof" aria-labelledby="proof-title">
+    <div class="mitiq-shell">
+      <h2 id="proof-title" class="mitiq-proof-title">Evidence and adoption</h2>
+      <div class="mitiq-proof-grid">
+        <article class="mitiq-proof-card mitiq-proof-featured">
+          <p class="mitiq-stat">3 / 3</p>
+          <h3>IBM devices improved</h3>
+          <p>Zero-noise extrapolation increased effective quantum volume on every device tested in the study.<sup><a href="#source-2">2</a></sup></p>
+        </article>
+        <article class="mitiq-proof-card">
+          <p class="mitiq-stat">143</p>
+          <h3>academic citations</h3>
+          <p>The open <a href="https://quantum-journal.org/papers/q-2022-08-11-774/">Mitiq paper</a> has been cited across the quantum research community.<sup><a href="#source-3">3</a></sup></p>
+        </article>
+        <article class="mitiq-proof-card">
+          <p class="mitiq-stat">450k</p>
+          <h3>PyPI downloads</h3>
+          <p>All-time downloads of Mitiq’s open-source Python package.<sup><a href="#source-5">5</a></sup></p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-Designed with portability in mind, `mitiq` is made to slot in to your existing quantum compute workflows with ease, independent of the choice of quantum SDK.
+  <section class="mitiq-toolkit" aria-labelledby="toolkit-title">
+    <div class="mitiq-shell">
+      <div class="mitiq-toolkit-heading">
+        <p class="mitiq-eyebrow">Open and extensible</p>
+        <h2 id="toolkit-title">Mitigation techniques across the quantum software stack.</h2>
+        <p>Choose from a growing set of error-mitigation methods and use them with the circuit framework that fits your work.</p>
+      </div>
+      <div class="mitiq-toolkit-columns">
+        <article>
+          <p class="mitiq-column-label">Techniques</p>
+          <h3><strong>13</strong> methods</h3>
+          <p>ZNE · PEC · CDR · dynamical decoupling · readout-error mitigation · and more<sup><a href="#source-4">4</a></sup></p>
+          <a class="mitiq-text-link" href="https://github.com/unitaryfoundation/mitiq#quick-tour">Explore all methods <span aria-hidden="true">→</span></a>
+        </article>
+        <article>
+          <p class="mitiq-column-label">SDKs</p>
+          <h3><strong>7</strong> circuit formats</h3>
+          <p>Cirq · Qiskit · PyQuil · Braket · PennyLane · Qibo · OpenQASM</p>
+          <a class="mitiq-text-link" href="https://mitiq.readthedocs.io/en/stable/guide/frontends-backends.html">Explore integrations <span aria-hidden="true">→</span></a>
+        </article>
+      </div>
+    </div>
+  </section>
 
-Check out the [5 year impact report](/posts/2024_mitiq_impact) for more information about the impact `mitiq` has made on the ecosystem.
+  <section class="mitiq-calibration" aria-labelledby="calibration-title">
+    <div class="mitiq-shell mitiq-calibration-grid">
+      <div class="mitiq-video-frame">
+        <video autoplay muted loop playsinline aria-label="Mitiq calibration module demonstration">
+          <source src="/assets/calibration.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <div class="mitiq-calibration-copy">
+        <p class="mitiq-eyebrow">Not sure where to start?</p>
+        <h2 id="calibration-title">Let calibration do the searching.</h2>
+        <p>Compare mitigation strategies and parameter choices against benchmark circuits, then select the configuration that performs best for your backend and workload.</p>
+        <a class="mitiq-button mitiq-button-primary" href="https://mitiq.readthedocs.io/en/stable/examples/calibration-tutorial.html">Follow the calibration tutorial <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
 
-<TwoColumn>
-  <Column title="With Cirq" titleStyle="solid">
-    <img src="/images/mitiq-cirq.png" />
-  </Column>
-  <Column title="With Qiskit" titleStyle="solid">
-    <img src="/images/mitiq-qiskit.png" />
-  </Column>
-</TwoColumn>
+  <section class="mitiq-sources" aria-label="Sources">
+    <div class="mitiq-shell">
+      <ol>
+        <li id="source-1"><a href="https://arxiv.org/abs/2210.07194">Russo et al. (2023)</a>, “Testing platform-independent quantum error mitigation on noisy quantum computers,” reporting resource-normalized improvement factors between 1× and 7×.</li>
+        <li id="source-2"><a href="https://arxiv.org/abs/2203.05489">LaRose et al. (2022)</a>, “Error mitigation increases the effective quantum volume of quantum computers.”</li>
+        <li id="source-3"><a href="https://inspirehep.net/literature/2130062">INSPIRE literature record</a>, citation count accessed September 2026.</li>
+        <li id="source-4"><a href="https://github.com/unitaryfoundation/mitiq#quick-tour">Mitiq repository quick tour</a>, seven stable methods, five experimental methods, and Pauli twirling.</li>
+        <li id="source-5"><a href="https://pepy.tech/projects/mitiq">pepy.tech Mitiq statistics</a>, approximately 450,000 all-time PyPI downloads; accessed September 2026.</li>
+      </ol>
+    </div>
+  </section>
+</main>
 
----
+<style is:global>{String.raw`
+  .page-mitiq .floating-social {
+    display: none;
+  }
 
-<ReducedWidth>
-**Quantum Error Mitigation Calibration**
+  .page-mitiq footer {
+    margin-top: 0;
+  }
 
-Unsure what error mitigation strategy and parameters to use? 
-Check out the mitiq calibration module demonstrated below to help find one 
-that works for you!
+  .mitiq-page {
+    --ink: #08070d;
+    --purple: #5e00bd;
+    --purple-dark: #210042;
+    --yellow: #f3f16b;
+    --cyan: #67c8c8;
+    --paper: #f7f5ee;
+    --wash: #f0edf2;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    color: var(--ink);
+    overflow: hidden;
+  }
 
-<p>
-  <video autoplay muted loop>
-    <source src="/assets/calibration.mp4" type="video/mp4" />
-  </video>
-</p>
+  .mitiq-shell {
+    width: min(1180px, calc(100% - 48px));
+    margin-inline: auto;
+  }
 
-Practice using calibration by following our tutorial on finding the right error
-mitigation protocol to use on an IBM Quantum fake device available 
-[here](https://mitiq.readthedocs.io/en/stable/examples/calibration-tutorial.html), 
-or watch the [video walkthrough](https://www.youtube.com/watch?v=dB_3R84ewig)!
+  .mitiq-hero {
+    position: relative;
+    isolation: isolate;
+    padding: clamp(72px, 9vw, 132px) 0 clamp(82px, 10vw, 148px);
+    color: white;
+    background: var(--purple-dark);
+  }
 
-**Want help using mitiq?**
+  .mitiq-hero::before {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    content: '';
+    opacity: .14;
+    background-image: linear-gradient(rgba(255,255,255,.32) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.32) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
 
-You can find us in the #mitiq channel on our 
-:social-link-discord[Discord] or email us at 
-[info@unitary.foundation](mailto:info@unitary.foundation).
+  .mitiq-hero-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(330px, .8fr);
+    gap: clamp(48px, 8vw, 108px);
+    align-items: center;
+  }
 
-**Learn more about Mitiq**
+  .mitiq-brand-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    margin-bottom: 28px;
+  }
 
-Read our **[whitepaper](https://doi.org/10.22331/q-2022-08-11-774)** published in [Quantum](https://quantum-journal.org/), check out our **[documentation](https://mitiq.readthedocs.io/en/stable/)**, or watch the video below.
+  .mitiq-logo {
+    display: block;
+    width: clamp(112px, 11vw, 148px);
+    height: auto;
+  }
 
-https://www.youtube.com/watch?v=QK3Vkn2MCCg
-</ReducedWidth>
+  .mitiq-brand-row .mitiq-kicker {
+    max-width: 230px;
+    margin: 0;
+    padding-left: 22px;
+    border-left: 1px solid rgba(255,255,255,.35);
+  }
+
+  .mitiq-release-note {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 100%;
+    margin: 0;
+    padding: 7px 10px;
+    border: 1px solid rgba(255,255,255,.26);
+    color: rgba(255,255,255,.74);
+    background: rgba(255,255,255,.06);
+    font: 400 .66rem/1.4 'Space Mono', monospace;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: border-color .2s ease, background .2s ease;
+  }
+
+  .mitiq-release-note strong { color: var(--yellow); font-weight: 700; }
+  .mitiq-release-note span:last-child { color: var(--cyan); transition: transform .2s ease; }
+  .mitiq-release-note:hover { border-color: rgba(255,255,255,.5); background: rgba(255,255,255,.1); }
+  .mitiq-release-note:hover span:last-child { transform: translateX(3px); }
+
+  .mitiq-release-row { margin-top: 26px; }
+
+  .mitiq-signal-column { min-width: 0; }
+  .mitiq-signal-column .mitiq-install { display: flex; width: fit-content; margin: 24px auto 0; }
+
+  .mitiq-kicker,
+  .mitiq-eyebrow {
+    margin: 0 0 22px;
+    color: var(--yellow);
+    font: 700 .72rem/1.4 'Space Mono', monospace;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+  }
+
+  .mitiq-hero h1 {
+    max-width: 780px;
+    margin: 0;
+    font: 700 clamp(3.2rem, 6.5vw, 6.1rem)/.94 'Space Grotesk', sans-serif;
+    letter-spacing: -.06em;
+  }
+
+  .mitiq-hero h1 span { color: var(--yellow); }
+
+  .mitiq-lede {
+    max-width: 700px;
+    margin: 32px 0 0;
+    color: rgba(255,255,255,.82);
+    font-size: clamp(1.08rem, 1.5vw, 1.32rem);
+    line-height: 1.65;
+  }
+
+  .mitiq-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 36px; }
+
+  .mitiq-button {
+    display: inline-flex;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 0 22px;
+    border: 2px solid var(--yellow);
+    text-decoration: none;
+    transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+  }
+
+  .mitiq-button:hover { transform: translate(-1px, -1px); box-shadow: -2px -2px 0 rgba(0, 227, 227, .75), 2px 2px 0 rgba(255, 43, 34, .65); }
+  .mitiq-button-primary { color: var(--ink); background: var(--yellow); }
+  .mitiq-button-secondary { color: white; background: transparent; }
+
+  .mitiq-install {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin: 26px 0 0;
+    padding: 13px 15px;
+    border: 1px solid rgba(255,255,255,.3);
+    color: white;
+    background: rgba(255,255,255,.07);
+    cursor: pointer;
+    font: 400 .94rem/1.4 'Space Mono', monospace;
+    transition: background .2s ease, border-color .2s ease;
+  }
+
+  .mitiq-install:hover { border-color: rgba(255,255,255,.58); background: rgba(255,255,255,.12); }
+  .mitiq-install:focus-visible { outline: 2px solid var(--yellow); outline-offset: 3px; }
+  .mitiq-install code { color: inherit; font: inherit; }
+  .mitiq-install-prompt { color: var(--cyan); }
+  .mitiq-copy-icon { display: inline-flex; align-items: center; justify-content: center; margin-left: 18px; color: var(--yellow); }
+  .mitiq-copy-icon svg { display: block; width: 18px; height: 18px; }
+  .mitiq-copy-icon .mitiq-copy-icon-success { display: none; }
+  .mitiq-install[data-copied='true'] { border-color: var(--yellow); color: var(--ink); background: var(--yellow); }
+  .mitiq-install[data-copied='true'] .mitiq-install-prompt,
+  .mitiq-install[data-copied='true'] .mitiq-copy-icon { color: var(--purple-dark); }
+  .mitiq-install[data-copied='true'] .mitiq-copy-icon-default { display: none; }
+  .mitiq-install[data-copied='true'] .mitiq-copy-icon-success { display: block; }
+
+  .mitiq-signal-card {
+    position: relative;
+    isolation: isolate;
+    padding: clamp(28px, 4vw, 44px);
+    background: rgba(8,7,13,.7);
+    backdrop-filter: blur(10px);
+  }
+
+  .mitiq-signal-card::before,
+  .mitiq-signal-card::after {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    pointer-events: none;
+  }
+  .mitiq-signal-card::before { inset: -7px 7px 7px -7px; border: 2px solid rgba(0, 227, 227, .72); }
+  .mitiq-signal-card::after { inset: 7px -7px -7px 7px; border: 2px solid rgba(255, 43, 34, .68); }
+
+  .mitiq-big-number { margin: 0; color: var(--yellow); font: 700 clamp(4.5rem, 8vw, 7.4rem)/.9 'Space Grotesk', sans-serif; letter-spacing: -.06em; }
+  .mitiq-big-number span { font-size: .4em; vertical-align: top; }
+  .mitiq-card-title { margin: 8px 0 32px; font: 700 1.16rem/1.4 'Space Mono', monospace; }
+  .mitiq-study-meta { display: grid; border-top: 1px solid rgba(255,255,255,.18); }
+  .mitiq-study-meta > div { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; padding: 12px 0; border-bottom: 1px solid rgba(255,255,255,.18); font: 400 .64rem/1.4 'Space Mono', monospace; }
+  .mitiq-study-meta span { color: rgba(255,255,255,.56); text-transform: uppercase; }
+  .mitiq-study-meta strong { color: white; text-align: right; }
+  .mitiq-card-note { margin: 26px 0 0; color: rgba(255,255,255,.58); font-size: .67rem; line-height: 1.6; }
+  .mitiq-card-note a { color: var(--yellow); }
+
+  .mitiq-proof { padding: clamp(64px, 7vw, 96px) 0; background: var(--paper); }
+  .mitiq-proof-title { margin: 0 0 24px; color: #5f5964; font: 700 .7rem/1.4 'Space Mono', monospace; letter-spacing: .12em; text-transform: uppercase; }
+  .mitiq-proof-grid { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--ink); }
+  .mitiq-proof-card { min-height: 260px; padding: clamp(26px, 3vw, 36px); border-left: 1px solid var(--ink); background: white; }
+  .mitiq-proof-card:first-child { border-left: 0; }
+  .mitiq-proof-featured { color: white; background: var(--purple-dark); }
+  .mitiq-stat { margin: 0 0 34px; font: 700 clamp(3rem, 5vw, 4.8rem)/.9 'Space Grotesk', sans-serif; letter-spacing: -.05em; }
+  .mitiq-proof-featured .mitiq-stat { color: var(--yellow); }
+  .mitiq-proof-card h3 { margin: 0 0 14px; font-size: .84rem; letter-spacing: .04em; }
+  .mitiq-proof-card h3 sup { margin-left: 4px; }
+  .mitiq-proof-card p:last-child { margin: 0; color: inherit; font-size: .84rem; line-height: 1.65; opacity: .82; }
+  .mitiq-proof-card a { color: inherit; }
+
+  .mitiq-toolkit .mitiq-eyebrow { color: var(--purple); }
+  .mitiq-toolkit h2,
+  .mitiq-calibration h2 { margin: 0; font: 700 clamp(2.45rem, 5vw, 4.8rem)/.98 'Space Grotesk', sans-serif; letter-spacing: -.05em; text-transform: none; }
+  .mitiq-text-link { display: inline-flex; gap: 10px; align-items: center; padding-bottom: 5px; border-bottom: 2px solid currentColor; color: var(--purple); text-decoration: none; }
+  .mitiq-text-link span { transition: transform .2s ease; }
+  .mitiq-text-link:hover span { transform: translateX(4px); }
+
+  .mitiq-toolkit { padding: clamp(72px, 8vw, 108px) 0; background: white; }
+  .mitiq-toolkit-heading { display: grid; grid-template-columns: 1.2fr .8fr; gap: clamp(36px, 7vw, 86px); align-items: end; margin-bottom: 42px; }
+  .mitiq-toolkit-heading .mitiq-eyebrow { grid-column: 1 / -1; margin-bottom: -14px; }
+  .mitiq-toolkit h2 { max-width: 720px; font-size: clamp(2.3rem, 4.5vw, 4rem); }
+  .mitiq-toolkit-heading > p:last-child { max-width: 560px; margin: 0; color: #595462; line-height: 1.7; }
+  .mitiq-toolkit-columns { display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--ink); }
+  .mitiq-toolkit-columns article { padding: clamp(28px, 4vw, 44px); }
+  .mitiq-toolkit-columns article + article { border-left: 1px solid var(--ink); background: var(--wash); }
+  .mitiq-column-label { margin: 0 0 24px; color: var(--purple); font: 700 .67rem/1.4 'Space Mono', monospace; letter-spacing: .1em; text-transform: uppercase; }
+  .mitiq-toolkit-columns h3 { display: flex; gap: 14px; align-items: baseline; margin: 0 0 20px; font: 700 .9rem/1.3 'Space Mono', monospace; text-transform: uppercase; }
+  .mitiq-toolkit-columns h3 strong { color: var(--purple); font: 700 3.2rem/1 'Space Grotesk', sans-serif; letter-spacing: -.05em; }
+  .mitiq-toolkit-columns article > p:not(.mitiq-column-label) { max-width: 500px; min-height: 58px; margin: 0 0 28px; color: #5f5964; font-size: .78rem; line-height: 1.7; }
+  .mitiq-toolkit-columns a { color: var(--purple); }
+
+  .mitiq-calibration { position: relative; padding: clamp(72px, 9vw, 118px) 0; color: white; background: var(--purple-dark); }
+  .mitiq-calibration-grid { position: relative; z-index: 1; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(320px, .85fr); gap: clamp(56px, 8vw, 108px); align-items: center; }
+  .mitiq-video-frame { overflow: hidden; border: 1px solid rgba(255,255,255,.3); background: white; box-shadow: 6px 6px 0 rgba(103, 200, 200, .7); }
+  .mitiq-video-frame video { display: block; width: 100%; height: auto; }
+  .mitiq-calibration-copy .mitiq-eyebrow { color: var(--yellow); }
+  .mitiq-calibration-copy > p:not(.mitiq-eyebrow) { margin: 28px 0 34px; color: rgba(255,255,255,.78); line-height: 1.7; }
+
+  .mitiq-sources { padding: 40px 0 72px; border-top: 1px solid #d8d3c8; background: var(--paper); }
+  .mitiq-sources ol { display: grid; gap: 12px; max-width: 900px; margin: 0; padding-left: 26px; color: #5f5964; font-size: .7rem; line-height: 1.55; list-style: decimal outside !important; }
+  .mitiq-sources ol li { display: list-item; padding-left: 4px !important; }
+  .mitiq-sources ol li::before { display: none !important; }
+  .mitiq-sources ol li::marker { color: var(--purple); font-weight: 700; }
+  .mitiq-sources a { color: var(--purple); }
+
+  @media (max-width: 900px) {
+    .mitiq-hero-grid,
+    .mitiq-toolkit-heading,
+    .mitiq-calibration-grid { grid-template-columns: 1fr; }
+    .mitiq-signal-column { max-width: 560px; }
+    .mitiq-proof-grid { grid-template-columns: 1fr; }
+    .mitiq-proof-card { min-height: 0; border-top: 1px solid var(--ink); border-left: 0; }
+    .mitiq-proof-card:first-child { border-top: 0; }
+    .mitiq-stat { margin-bottom: 34px; }
+    .mitiq-toolkit-heading .mitiq-eyebrow { margin-bottom: 0; }
+  }
+
+  @media (max-width: 560px) {
+    .mitiq-shell { width: min(100% - 30px, 1180px); }
+    .mitiq-hero { padding-top: 60px; }
+    .mitiq-hero h1 { font-size: clamp(2.85rem, 15vw, 4.8rem); }
+    .mitiq-brand-row { align-items: flex-start; flex-direction: column; gap: 14px; }
+    .mitiq-brand-row .mitiq-kicker { max-width: none; padding-left: 0; border-left: 0; }
+    .mitiq-release-note { gap: 7px; font-size: .57rem; }
+    .mitiq-actions { align-items: stretch; flex-direction: column; }
+    .mitiq-button { width: 100%; }
+    .mitiq-toolkit-columns { grid-template-columns: 1fr; }
+    .mitiq-toolkit-columns article + article { border-top: 1px solid var(--ink); border-left: 0; }
+    .mitiq-toolkit-columns article > p:not(.mitiq-column-label) { min-height: 0; }
+    .mitiq-video-frame { box-shadow: 4px 4px 0 rgba(103, 200, 200, .7); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .mitiq-button { transition: none; }
+  }
+`}</style>

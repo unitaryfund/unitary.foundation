@@ -1,0 +1,35 @@
+---
+import { Check, Clipboard } from 'lucide-react';
+---
+
+<button class="mitiq-install" type="button" data-copy-install aria-label="Copy pip install mitiq">
+  <span class="mitiq-install-prompt" aria-hidden="true">$</span>
+  <code>pip install mitiq</code>
+  <span class="mitiq-copy-icon" aria-hidden="true">
+    <Clipboard className="mitiq-copy-icon-default" size={18} strokeWidth={2.5} />
+    <Check className="mitiq-copy-icon-success" size={18} strokeWidth={2.5} />
+  </span>
+  <span class="sr-only" data-copy-status aria-live="polite"></span>
+</button>
+
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-copy-install]').forEach((button) => {
+    button.addEventListener('click', async () => {
+      const status = button.querySelector<HTMLElement>('[data-copy-status]');
+
+      try {
+        await navigator.clipboard.writeText('pip install mitiq');
+        button.dataset.copied = 'true';
+        button.setAttribute('aria-label', 'Copied pip install mitiq');
+        if (status) status.textContent = 'Copied to clipboard';
+        window.setTimeout(() => {
+          delete button.dataset.copied;
+          button.setAttribute('aria-label', 'Copy pip install mitiq');
+          if (status) status.textContent = '';
+        }, 1600);
+      } catch {
+        if (status) status.textContent = 'Unable to copy. Select the command manually.';
+      }
+    });
+  });
+</script>
